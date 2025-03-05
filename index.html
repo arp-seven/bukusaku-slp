@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+
+      .container {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+      }
+
+      h1 {
+        font-size: 28px;
+        color: #2c3279;
+        margin-bottom: 15px;
+      }
+
+      .logo img {
+        height: auto;
+        max-height: 80px;
+        width: auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 2px solid #373d93;
+        border-radius: 6px;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+        box-sizing: border-box;
+      }
+
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        border-color: #fca24a;
+        box-shadow: 0 0 10px rgba(252, 162, 74, 0.5);
+        outline: none;
+      }
+
+      .btn {
+        width: 100%;
+        background-color: #fca24a;
+        color: white;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-sizing: border-box;
+      }
+
+      .btn:hover {
+        background-color: #e78f3e;
+        box-shadow: 0 4px 10px rgba(252, 162, 74, 0.4);
+      }
+
+      .error {
+        color: red;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+
+      /* RESPONSIVE DESIGN */
+      @media (max-width: 480px) {
+        .container {
+          padding: 20px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        .btn {
+          font-size: 16px;
+          padding: 10px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Selamat Datang</h1>
+      <div class="logo">
+        <img src="https://bukusaku.pt-slp.co.id/images/slp.png" alt="Logo" />
+      </div>
+      <form action="periksa_login.php" method="POST">
+        <label>Username</label>
+        <input type="text" name="username" placeholder="Username.." required />
+        <label>Password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password.."
+          required
+        />
+        <input type="submit" class="btn" value="LOGIN" />
+        <p class="error"></p>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penanganan Darurat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f5f5f5;
+            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
+        }
+
+        /* Navigasi Atas */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f39c12;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1000;
+            /* Agar tetap di atas elemen lain */
+        }
+
+
+        .top-nav .back-btn {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+
+
+        /* Konten Utama */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 26px;
+            color: #333;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            color: #222;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .section p,
+        .section ul {
+            font-size: 18px;
+            color: black;
+            line-height: 1.6;
+            margin-left: 15px;
+        }
+
+        .section ul {
+            padding-left: 25px;
+        }
+
+        /* Navigasi Bawah */
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #333;
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigasi Atas -->
+    <div class="top-nav">
+        <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
+        <span>PENANGANAN DARURAT</span>
+        <span></span> <!-- Spacer -->
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="content">
+        <div class="header">
+            <h1>PROSEDUR PENANGANAN DARURAT</h1>
+        </div>
+
+        <div class="section">
+            <h2>A. Security Department</h2>
+            <h3>1. Lobby Utama</h3>
+            <ul>
+                <li>Petugas lobby menginformasikan kepada penghuni bahwa telah terjadi kebakaran atau gempa bumi dengan tenang.</li>
+                <li>Petugas lobby segera meminta bantuan ke posko security dan tetap berkoordinasi dengan korwil.</li>
+                <li>Melarang yang tidak berkepentingan berada di dalam lokasi dan menanyakan identitas setiap orang yang masuk.</li>
+                <li>Menginformasikan untuk menggunakan tangga darurat saat turun dari lantai.</li>
+                <li>Mengawasi dan memantau pengeluaran barang milik tamu atau siswa.</li>
+            </ul><br>
+
+            <h3>2. POSKO Security</h3>
+            <ul>
+                <li>Mengirimkan bantuan kepada area yang bermasalah.</li>
+                <li>Memerintahkan pengecekan STNK bagi kendaraan mobil yang keluar area parkir (jika lampu padam).</li>
+                <li>Mengerahkan tim posko untuk membantu petugas parkir dan mengantisipasi orang tidak berkepentingan.</li>
+                <li>Petugas security lantai wajib melakukan patroli dan berjaga untuk menghindari penjarahan.</li>
+                <li>Petugas security membantu evakuasi siswa dan karyawan menuju assembly point.</li>
+            </ul><br>
+
+            <h2>B. Engineering Department</h2>
+            <ul>
+                <li>Petugas engineering memastikan genset berfungsi dengan baik.</li>
+                <li>Petugas lift bersama security memeriksa dan mengevakuasi penumpang lift.</li>
+                <li>Petugas shift berkoordinasi dengan security untuk tindakan yang diperlukan.</li>
+                <li>Petugas shift atau lobby menangani telepon masuk untuk memberikan penjelasan.</li>
+            </ul><br>
+
+            <h2>C. Housekeeping Department</h2>
+            <p>Chief atau section head mengarahkan petugas kebersihan membantu evakuasi siswa/karyawan melalui pintu darurat</p><br>
+        </div>
+    </div>
+
+    <!-- Navigasi Bawah -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-home"></i></a>
+        <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a>
+    </div>
+
+</body>
+
+</html>

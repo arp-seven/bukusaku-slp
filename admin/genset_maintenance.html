@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Genset</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f5f5f5;
+            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
+        }
+
+        /* Navigasi Atas */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f39c12;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1000;
+            /* Agar tetap di atas elemen lain */
+        }
+
+
+        .top-nav .back-btn {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+
+
+        /* Konten Utama */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 26px;
+            color: #333;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            color: #222;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .section p,
+        .section ul {
+            font-size: 18px;
+            color: black;
+            line-height: 1.6;
+            margin-left: 15px;
+        }
+
+        .section ul {
+            padding-left: 25px;
+        }
+
+        /* Navigasi Bawah */
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #333;
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigasi Atas -->
+    <div class="top-nav">
+        <a href="genset.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
+        <span>MAINTENANCE GENSET</span>
+        <span></span> <!-- Spacer -->
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="content">
+        <div class="header">
+            <h1>PROSEDUR MAINTENANCE GENSET</h1>
+        </div>
+
+        <div class="section">
+            <h2>Peralatan yang dibutuhkan :</h2>
+            <p> - Kunci ring 1 set <br>
+                - Kunci pas 1 set <br>
+                - Kunci sock 1 set <br>
+                - Obeng ( +, - ) <br>
+                - Multitester <br>
+                - Thermometer stick <br>
+                - Pipet larutan H2 SO / air destileter <br>
+                - BJ meter Accu <br>
+                - Tang combination <br>
+                - Grease Vaseline <br>
+                - Kain lap / majun <br>
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>1. Pemeriksaan system pendingin air</h3><br>
+            <ul>
+                <li>Periksa radiator dari kebocoran air pendingin ( Standart water 6,5 – 8,0 pH, kandungan cholorin kurang dari 1000 ppm )</li>
+                <li>Periksa ketinggian air ( Harus normal dan penuh )</li>
+                <li>Periksa lubang penutup yang ada di engine</li>
+                <li>Periksa drain valve di radiator</li>
+                <li>Periksa pipa – ppa flexible radiator dari kebocoran air</li>
+
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>2. Pemeriksaan system pendingin oli dan pelumasan</h3><br>
+            <ul>
+                <li>Periksa level ketinggian oli di basin tap genset</li>
+                <li>Periksa kebocoran di system jaringan pipa pendingin oli</li>
+                <li>Standart oli API Service CD, SAE 40</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>3. Pemeriksaan system bahan bakar</h3><br>
+            <ul>
+                <li>Pemeriksaan instalasi bahan bakar dari daily tank hingga fuel pump dari kebocoran</li>
+                <li>Bahan bakar standart ASTM, D 975 grade no. 2D, karena dengan mutu bahan bakar yang baik akan optimal performanya, memperpanjang umur mesin dan emisi gas buang polusi akan terhindari</li>
+                <li>Periksa screen bahan bakar yang ada di fuel filter</li>
+                <li>Periksa dan kendorkan plug air vent di atas tutup filter bahan bakar sampai udara terbuang dan keluar cairan bahan bakar</li>
+                <li>Buang larutan bahan bakar yang tercampur dengan air dengan membuka valve fuel tank di bawah daily tank / storage tank</li>
+            </ul>
+            <br>
+        </div>
+
+        <div class="section">
+            <h3>4. Pemeriksaan battery</h3><br>
+            <ul>
+                <li>Periksa level cairan elektrolit battery dan tambahkan cairan elektrolit sampai level normal</li>
+                <li>Periksa system charging battery dari tingginya temperature cairan elektrolit H2 SO4 battery ( Full charging 50° C ) dan check berat jenis larutan elektrolit tersebut 1230 s/d 1250</li>
+                <li>Kencangkan vent plug</li>
+                <li>Bersihkan terminal battery dan berikan grease / Vaseline</li>
+            </ul>
+            <br>
+        </div>
+
+        <div class="section">
+            <h3>5. Pemeriksaan dengan test running genset</h3><br>
+            <ul>
+                <li>Start engine melalui panel genset dengan menekan tombol running test ( position selector switch di posisi automatic )</li>
+                <li>Pastikan indicator Led charging di genset panel kecil OFF setelah genset running</li>
+                <li>Periksa frequency meter, harus menunjukkan ± 50 Hz</li>
+                <li>Periksa volt meter, harus menunjukkan ± 380 volt</li>
+                <li>Periksa indicator tekanan oli ( 2,5 ~ 6 kgf/cm )</li>
+                <li>Periksa indicator ampere ( sesuai load )</li>
+                <li>Operasikan genset 3 s/d 5 menit untuk trial test</li>
+                <li>Test juga emergency tombol stop</li>
+            </ul>
+            <br>
+        </div>
+
+        <div class="section">
+            <p> - Engine oil low pressure <br>
+                - Engine coolant temperature low <br>
+                - Over speed <br>
+                - Emergency stop <br>
+                - Penggantian oli <br>
+                - Pembersihan air cleaner / filter udara <br>
+                - Van belt <br>
+                - Penggantian filter oli <br>
+                - Penggantian filter bahan bakar <br>
+                - Check altenator <br>
+                - Check starter dan check solenoid start <br>
+            </p><br><br>
+        </div>
+    </div>
+
+    <!-- Navigasi Bawah -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-home"></i></a>
+        <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a>
+    </div>
+
+</body>
+
+</html>

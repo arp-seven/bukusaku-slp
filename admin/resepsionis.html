@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resepsionis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f5f5f5;
+            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
+        }
+
+        /* Navigasi Atas */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f39c12;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1000;
+            /* Agar tetap di atas elemen lain */
+        }
+
+
+        .top-nav .back-btn {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+
+
+        /* Konten Utama */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 26px;
+            color: #333;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            color: #222;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .section p,
+        .section ul {
+            font-size: 18px;
+            color: black;
+            line-height: 1.6;
+            margin-left: 15px;
+        }
+
+        .section ul {
+            padding-left: 25px;
+        }
+
+        /* Navigasi Bawah */
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #333;
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigasi Atas -->
+    <div class="top-nav">
+        <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
+        <span>RESEPTIONIST</span>
+        <span></span> <!-- Spacer -->
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="content">
+        <div class="header">
+            <h1>PROSEDUR REDAKSI RESEPTIONIST</h1>
+        </div>
+
+        <div class="section">
+            <h2>REDAKSI KEBAKARAN</h2>
+            <h3>1. Saat Latihan Kebakaran</h3>
+            <p>Mohon perhatian. Ini hanya latihan evakuasi kebakaran, alarm kebakaran telah aktif dalam gedung. Mohon segera melakukan evakuasi melalui tangga darurat terdekat dan ikuti petunjuk dari petugas peran kebakaran lantai Anda. Mohon untuk tidak menggunakan lift.</p>
+            <br>
+            <h3>2. Saat Evakuasi Kebakaran</h3>
+            <p>Mohon perhatian. Alarm kebakaran telah aktif. Mohon segera melakukan evakuasi melalui tangga darurat terdekat dan ikuti petunjuk dari petugas kebakaran lantai Anda. Mohon untuk tidak menggunakan lift.</p>
+            <br>
+            <h2>REDAKSI GEMPA BUMI</h2>
+            <h3>1. Info Gempa Bumi</h3>
+            <p>Selamat pagi Bapak/Ibu yang terhormat. Diinformasikan pada pagi hari ini pukul ………. WIB telah terjadi gempa bumi. Apabila terjadi gempa susulan, mohon Bapak/Ibu tidak panik dan berlindung di tempat yang aman. Saat ini tim building sedang melakukan pengecekan. Setelah selesai pengecekan kami akan menginformasikan kembali. Mohon maaf atas ketidaknyamanan ini. Terima kasih.</p>
+            <br>
+            <h3>2. Info Setelah Pengecekan Gedung</h3>
+            <p>Selamat pagi Bapak/Ibu yang terhormat. Diinformasikan saat ini tim teknisi sudah melakukan penyisiran untuk semua lantai gedung dan gedung ini dalam kondisi aman. Mohon maaf atas ketidaknyamanan ini. Terima kasih.</p>
+            <br>
+            <h2>PEMADAMAN LISTRIK PLN</h2>
+            <h3>1. Pemadaman Listrik (PLN ke Genset)</h3>
+            <p>Selamat pagi Bapak/Ibu yang terhormat. Sehubungan dengan adanya gangguan dari PLN, maka kami akan melakukan pemadaman listrik sementara dalam waktu ………… menit. Diharapkan seluruh staf untuk mematikan perangkat multimedia terlebih dahulu dan tidak menggunakan lift. Mohon maaf atas ketidaknyamanan ini. Terima kasih.</p>
+            <br>
+            <h3>2. Sudah Menggunakan Genset</h3>
+            <p>Selamat pagi Bapak/Ibu yang terhormat. Sehubungan dengan pemadaman listrik beberapa saat lalu, maka bersama ini kami informasikan bahwa listrik telah menggunakan genset dan kita akan running selama ……………… ke depan. Listrik dari genset akan dialihkan kembali ke PLN setelah ……….. menit. Mohon maaf atas ketidaknyamanan ini. Terima kasih.</p>
+            <br>
+            <h3>3. Pemadaman Listrik (Genset ke PLN)</h3>
+            <p>Selamat pagi Bapak/Ibu yang terhormat. Sehubungan dengan adanya peralihan listrik dari PLN ke genset, maka kami akan melakukan peralihan kembali dari genset ke PLN selama ………….. menit ke depan. Diharapkan seluruh staf untuk mematikan perangkat multimedia terlebih dahulu dan tidak menggunakan lift. Mohon maaf atas ketidaknyamanan ini. Terima kasih.</p>
+            <br>
+            <h3>4. Listrik Normal</h3>
+            <p>Selamat pagi Bapak/Ibu yang terhormat. Sehubungan dengan pemadaman listrik beberapa saat lalu, maka bersama ini kami informasikan bahwa listrik dari PLN sudah kembali normal. Silahkan untuk melanjutkan aktivitas kembali. Mohon maaf atas ketidaknyamanan ini. Terima kasih.</p>
+            <br>
+            <h2>SIMULASI PERALIHAN LISTRIK KE GENSET</h2>
+            <h3>1. Pemadaman Listrik (PLN ke Genset)</h3>
+            <p>Selamat pagi Bapak/Ibu yang terhormat. Sehubungan dengan adanya simulasi peralihan listrik dari PLN ke genset, maka kami akan melakukan pemadaman listrik sementara dalam waktu ………… menit. Diharapkan seluruh staf untuk mematikan perangkat multimedia terlebih dahulu dan tidak menggunakan lift. Mohon maaf atas ketidaknyamanan ini. Terima kasih.</p>
+            <br>
+            <h3>2. Sudah Menggunakan Genset</h3>
+            <p>Selamat pagi Bapak/Ibu yang terhormat. Sehubungan dengan peralihan listrik beberapa saat lalu, maka bersama ini kami informasikan bahwa listrik telah menggunakan genset dan kita akan running selama ……………… ke depan. Listrik dari genset akan dialihkan kembali ke PLN setelah ……….. menit. Mohon maaf atas ketidaknyamanan ini. Terima kasih.</p>
+            <br>
+        </div>
+    </div>
+
+    <!-- Navigasi Bawah -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-home"></i></a>
+        <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a>
+    </div>
+
+</body>
+
+</html>

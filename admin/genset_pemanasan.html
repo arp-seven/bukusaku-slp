@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemanasan Genset</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f5f5f5;
+            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
+        }
+
+        /* Navigasi Atas */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f39c12;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1000;
+            /* Agar tetap di atas elemen lain */
+        }
+
+
+        .top-nav .back-btn {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+
+
+        /* Konten Utama */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 26px;
+            color: #333;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            color: #222;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .section p,
+        .section ul {
+            font-size: 18px;
+            color: black;
+            line-height: 1.6;
+            margin-left: 15px;
+        }
+
+        .section ul {
+            padding-left: 25px;
+        }
+
+        /* Navigasi Bawah */
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #333;
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigasi Atas -->
+    <div class="top-nav">
+        <a href="genset.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
+        <span>PEMANASAN GENSET</span>
+        <span></span> <!-- Spacer -->
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="content">
+        <div class="header">
+            <h1>PROSEDUR PEMANASAN GENSET</h1>
+        </div>
+
+        <div class="section">
+            <p> 1. Check kondisi accu (baterai) yang ada di Genset 3 & 4, dan lihat kondisi ampere baterai jangan sampai drop, check koneksi kabel yang menuju ke baterai pastikan koneksinya kencang/kuat.
+                <br>
+                <br>
+                2. Check kondisi level air dan kondisi oli serta level oli yang ada di Genset 3 & 4.
+                <br>
+                <br>
+                3. Check koneksi kabel controlnya yang ada di Genset 3 & 4 dan ukur voltage/tegangan baterai.
+                <br>
+                <br>
+                4. Modul Control Deepsea yang di Panel Genset 3 & 4 dan Panel PKG dipastikan dalam keadaan “Manual”.
+                <br>
+                <br>
+                5. Check dan catat kondisi solar serta lihat level solar yang ada di tangki solar harian dan bulanan.
+                <br>
+                <br>
+                6. Sebelum menjalankan genset terlebih dahulu catat KWH meter, oil preasure, running hours, dan temperature mesin genset yang ada di Modul Control Genset 3 & 4.
+                <br>
+                <br>
+                7. Menghidupkan mesin genset dengan cara menekan tombol “START” yang ada di modul Genset 3 & 4 selama kurang lebih 15 menit.
+                <br>
+                <br>
+                8. Catat voltage/tegangan, frequency, oil preasure, temperature mesin yang ada di Genset 3 & 4 pada saat mesin genset running.
+                <br>
+                <br>
+                9. Periksa kondisi suara/kebisingan, asap, dan temperature mesin genset pada saat Genset 3 & 4 running.
+                <br>
+                <br>
+                10. Setelah selama kurang lebih 15 menit Genset 3 & 4 running, kemudian genset 3 & 4 siap dimatikan dengan cara menekan tombol “STOP” yang ada di modul genset.
+                <br>
+                <br>
+                11. Setelah selesai pemanasan genset dilakukan, jangan lupa kembalikan ke posisi “AUTO” dengan cara menekan tombol “AUTO” yang ada di Modul Control Genset dan Modul Control Panel PKG.
+                <br>
+                <br>
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Navigasi Bawah -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-home"></i></a>
+        <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a>
+    </div>
+
+</body>
+
+</html>

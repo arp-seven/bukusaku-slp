@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaffolding</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-color: #f5f5f5;
+            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
+        }
+
+        /* Navigasi Atas */
+        .top-nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: #f39c12;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            z-index: 1000;
+            /* Agar tetap di atas elemen lain */
+        }
+
+
+        .top-nav .back-btn {
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+        }
+
+
+        /* Konten Utama */
+        .content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 26px;
+            color: #333;
+            margin-top: 70px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            color: #222;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+
+        .section p,
+        .section ul {
+            font-size: 18px;
+            color: black;
+            line-height: 1.6;
+            margin-left: 15px;
+        }
+
+        .section ul {
+            padding-left: 25px;
+        }
+
+        /* Navigasi Bawah */
+        .navbar {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #333;
+            padding: 12px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigasi Atas -->
+    <div class="top-nav">
+        <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
+        <span>SCAFFOLDING</span>
+        <span></span> <!-- Spacer -->
+    </div>
+
+    <!-- Konten Utama -->
+    <div class="content">
+        <div class="header">
+            <h1>PROSEDUR PERANCAH SCAFFOLDING </h1>
+        </div>
+
+        <div class="section">
+            <h2>1. TUJUAN</h2>
+            <p>Standar Operational Prosedur ini bertujuan untuk Memastikan pembangunan perancah / scaffolding dilakukan dengan aman, efisien, dan sesuai dengan standar keselamatan yang berlaku.untuk menghindari kecelakaan dan memastikankeberlanjutan aktifitas kerja</p>
+        </div>
+
+        <div class="section">
+            <h2>2. RUANG LINGKUP</h2>
+            <p>Standar Operasional Prosedur ini berlaku untuk semua aktifitas pemasangan perancah / scaffolding yang dilakukan di semua wilayah kerja PT.Sentral layanan Prima</p>
+        </div>
+
+        <div class="section">
+            <h2>3. PERSYARATAN KESELAMATAN</h2>
+            <P>Pekerja harus dilengkapi dengan peralatan pelindung pribadi, termasuk fullbodyharness</P>
+            <ul>
+                <Ol>
+                    <li>Area kerja harus dilengkapi dengan tanda peringatan dan batasan akses seperti safety line / barricade line untuk memastikan keamanan pekerja dan personel lainnya</li>
+                    <li>Pastikan semua perlengkapan keselamatan dalam kondisi baik dan amandigunakan.</li>
+                    <li>Pastikan semua pekerja melakukan pengecekan tekanan darah sebelum pekerjaan tinggi dimulai.</li>
+                    <li>Pastikan semua personel yang terlibat memahami semua bahaya yang ada diarea kerja pembangunan perancah / scaffolding </li>
+                </Ol>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>4. PROSEDUR OPERASIONAL</h2>
+            <h3>4.1 Tahapan Persiapan</h3><br>
+            <p>Pastikan semua dokumen dan izin kerja yang diperlukan telah diperoleh dandisetujui sebelum memulai aktifitas ketinggian.
+                <br>Lakukan koordinasi dengan pihak berwenang jika diperlukan
+            </p>
+            <ul>
+                <Ol>
+                    <li>Sebelum memulai pembangunan perancah / scaffolding , lakukan pemeriksaanarea kerja untuk mengidentifikasi potensi risiko dan bahaya.</li>
+                    <li>Tentukan jenis perancah / scaffolding yang diperlukan berdasarkan jenis pekerjaan dan kondisi lingkungan.</li>
+                    <li>Pastikan semua material perancah / scaffolding dan peralatan yang diperlukantersedia dan dalam kondisi baik.</li>
+                    <li>Lakukan perhitungan beban maksimum yang akan ditanggung perancah / scaffolding.</li>
+                    <li>Tentukan lokasi dan jumlah titik dukungan perancah / scaffolding</li>
+                    <li>Identifikasi dan persiapkan area evakuasi darurat</li>
+                    <li>Pastikan pekerja terlatih dan memahami prosedur keselamatan kerja</li>
+                </Ol>
+            </ul><br>
+
+            <h3>4.2 Pemasangan Pertama</h3><br>
+            <ul>
+                <ol>
+                    <li>Pasang tiang penyangga atau titik-titik dukungan awal sesuai dengan perencanaan</li>
+                    <li>Pastikan tiang penyangga terpasang secara kokoh dan aman</li>
+                </ol>
+            </ul><br>
+            <h3>4.3 Pemasangan Frame Scaffolding</h3><br>
+            <ul>
+                <ol>
+                    <li>Pasang frame scaffolding sesuai dengan perencanaan</li>
+                    <li>Pastikan semua koneksi dan pengunci terpasang dengan benar</li>
+                </ol>
+            </ul><br>
+            <h3>4.4 Pemasangan Platform dan Handrail</h3><br>
+            <ul>
+                <ol>
+                    <li>Pasang platform scaffolding dengan jarak yang sesuai untuk mencegahkelebihan beban</li>
+                    <li>Pasang Toeboard yang sesuai untuk mencegah benda yang jatuh dari arah samping</li>
+                </ol>
+            </ul><br>
+        </div>
+
+        <div class="section">
+            <h2>5. PEMERIKSAAN KESELAMATAN</h2>
+            <p>Pastikan semua baut dan pengunci pengencang scaffolding terpasang dengan benar</p>
+            <ul>
+                <ol>
+                    <li>Periksa ketegangan tiap bagian scaffolding secara berkala</li>
+                    <li>Pastikan tidak ada komponen scaffolding yang rusak atau tidak terpasangdengan baik</li>
+                    <li>Lakukan pemeriksaan keselamatan secara berkala selama pembangunan</li>
+                    <li>Pastikan tidak ada pekerja yang bekerja di atas scaffolding tanpa menggunakanAlat Pelindung Diri</li>
+                    <li>Akukan pemeliharaan rutin untuk memastikan scaffolding tetap dalam kondisiyang baik</li>
+                    <li>Catat dan perbaiki segera setiap kerusakan atau kekurangan yang ditemukan</li>
+                </ol>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>6. PELAPORAN</h2>
+            <ul>
+                <ol>
+                    <li>Buat laporan mengenai pembangunan scaffolding, termasuk hasil pemeriksaankeselamatan</li>
+                    <li>Lakukan evaluasi untuk meningkatkan prosedur di masa mendatang</li>
+                </ol>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>7. PELATIHAN</h2>
+            <ul>
+                <ol>
+                    <li>Pastikan bahwa semua pekerja yang terlibat dalam kegiatan pembangunanscaffolding telah menerima pelatihan yang sesuai</li>
+                    <li>Lakukan pelatihan tambahan sesuai dengan perkembangan teknologi danstandar keamanan</li>
+                </ol>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>8. PENUTUP</h2>
+            <p>Setiap orang yang terlibat dalam kegiatan Pengelasan harus memahami dan mematuhi Standar Operasional Prosedur ini. Keselamatan adalah prioritas utama, dan setiap langkah harus diambil untuk mengurangi risiko kecelakaan selama kegiatan Pengelasan</p>
+        </div><br>
+    </div>
+
+    <!-- Navigasi Bawah -->
+    <div class="navbar">
+        <a href="index.html"><i class="fa fa-home"></i></a>
+        <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a>
+    </div>
+
+</body>
+
+</html>
