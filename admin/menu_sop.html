@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
+
+      .container {
+        flex: 1;
+        overflow-y: auto;
+        padding-bottom: 80px;
+        /* Jaga agar menu tidak tertutup navbar */
+      }
+
+      .slider {
+        width: 100%;
+        max-height: 250px;
+        overflow: hidden;
+      }
+
+      .slider img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      .menu-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px;
+        justify-content: center;
+      }
+
+      .menu-item {
+        background: rgb(255, 255, 255);
+        color: BLACK;
+        padding: 15px;
+        text-align: center;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 12px;
+        width: 30%;
+        min-width: 100px;
+        min-height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        word-wrap: break-word;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.75);
+        transition: 0.3s;
+      }
+
+      .menu-item img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+      }
+
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        z-index: 1000;
+      }
+
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        text-align: center;
+      }
+
+      .navbar i {
+        display: block;
+        margin-bottom: 3px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="slider">
+        <img
+          src="https://i.ibb.co.com/7JY4mn3k/Banner-1.jpg"
+          alt="Slide 1"
+        />
+        <img
+          src="https://i.ibb.co.com/q38P1Fmg/Banner-2.jpg"
+          alt="Slide 2"
+        />
+      </div>
+
+      <div class="menu-grid">
+        <a href="gondola.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/3202/3202019.png"
+            alt=""
+          />GONDOLA</a
+        >
+        <a href="genset.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/11498/11498903.png"
+            alt=""
+          />GENSET</a
+        >
+        <a href="limbah.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/12299/12299135.png"
+            alt=""
+          />PENGELOLAAN LIMBAH</a
+        >
+        <a href="scaffolding.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/4631/4631737.png"
+            alt=""
+          />SCAFOLDING</a
+        >
+        <a href="ketinggian.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/1275/1275442.png"
+            alt=""
+          />KETINGGIAN</a
+        >
+        <a href="darurat.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/18251/18251139.png"
+            alt=""
+          />PENANGANAN DARURAT</a
+        >
+        <a href="resepsionis.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/4635/4635296.png"
+            alt=""
+          />RESEPTIONIST</a
+        >
+        <a href="house_keeping.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/9362/9362950.png"
+            alt=""
+          />HK</a
+        >
+        <a href="potong_rumput.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/9997/9997712.png"
+            alt=""
+          />POTONG RUMPUT</a
+        >
+        <a href="gardener.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/1518/1518914.png"
+            alt=""
+          />GARDENER</a
+        >
+        <a href="security.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/4009/4009139.png"
+            alt=""
+          />SECURITY</a
+        >
+        <a href="lokasi.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/10342/10342067.png"
+            alt=""
+          />KESELAMATAN DI LOKASI</a
+        >
+        <a href="workshop.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/10723/10723602.png "
+            alt=""
+          />KESELAMATAN DI WORKSHOP</a
+        >
+        <a href="pengelasan.html" class="menu-item"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/936/936831.png"
+            alt=""
+          />PENGELASAN</a
+        >
+        <!-- <a href="menu15.html" class="menu-item"><img src="icon15.png" alt=""></a> -->
+      </div>
+    </div>
+
+    <!-- Navigasi Bawah -->
+    <div class="navbar">
+      <a href="index.html"><i class="fa fa-home"></i> Home</a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i> Logout</a> -->
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $(".slider").slick({
+          autoplay: true,
+          autoplaySpeed: 3000,
+          dots: true,
+          arrows: false,
+        });
+      });
+    </script>
+  </body>
+</html>

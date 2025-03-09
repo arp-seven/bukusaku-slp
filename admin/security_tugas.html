@@ -1,232 +1,299 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Security</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="security.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>SECURITY</span>
-        <span></span> <!-- Spacer -->
+      <a href="security.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>SECURITY</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR TUGAS SECURITY</h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR TUGAS SECURITY</h1>
+      </div>
 
-        <div class="section">
-            <h2>1. Tujuan</h2>
-            <p>SOP ini bertujuan sebagai pedoman bagi petugas keamanan (Satpam) dalam menjaga keamanan, ketertiban, dan keselamatan di lingkungan perusahaan, termasuk pencegahan gangguan internal/eksternal dan penegakan peraturan perusahaan.</p>
-            <br>
-            <h2>2. Struktur dan Tanggung Jawab</h2>
+      <div class="section">
+        <h2>1. Tujuan</h2>
+        <p>
+          SOP ini bertujuan sebagai pedoman bagi petugas keamanan (Satpam) dalam
+          menjaga keamanan, ketertiban, dan keselamatan di lingkungan
+          perusahaan, termasuk pencegahan gangguan internal/eksternal dan
+          penegakan peraturan perusahaan.
+        </p>
+        <br />
+        <h2>2. Struktur dan Tanggung Jawab</h2>
 
-            <h3>Chief Security:</h3>
-            <ul>
-                <li>Bertanggung jawab atas perencanaan, pengorganisasian, dan evaluasi sistem pengamanan.</li>
-                <li>Mengkoordinasikan operasi dengan aparat setempat (Polri, Pemda) dan memastikan kepatuhan K3.</li>
-            </ul>
+        <h3>Chief Security:</h3>
+        <ul>
+          <li>
+            Bertanggung jawab atas perencanaan, pengorganisasian, dan evaluasi
+            sistem pengamanan.
+          </li>
+          <li>
+            Mengkoordinasikan operasi dengan aparat setempat (Polri, Pemda) dan
+            memastikan kepatuhan K3.
+          </li>
+        </ul>
 
-            <h3>Assistant Chief Security:</h3>
-            <ul>
-                <li>Mendukung Chief Security dalam implementasi SOP, pengawasan harian, pembinaan anggota, dan pelaporan insiden.</li>
-            </ul>
+        <h3>Assistant Chief Security:</h3>
+        <ul>
+          <li>
+            Mendukung Chief Security dalam implementasi SOP, pengawasan harian,
+            pembinaan anggota, dan pelaporan insiden.
+          </li>
+        </ul>
 
-            <h3>Komandan Regu (Danru):</h3>
-            <ul>
-                <li>Memimpin regu, mengatur jadwal patroli, mengecek kelengkapan seragam/alat, serta melaporkan hasil patroli.</li>
-            </ul>
+        <h3>Komandan Regu (Danru):</h3>
+        <ul>
+          <li>
+            Memimpin regu, mengatur jadwal patroli, mengecek kelengkapan
+            seragam/alat, serta melaporkan hasil patroli.
+          </li>
+        </ul>
 
-            <h3>Anggota Security:</h3>
-            <ul>
-                <li>Melaksanakan penjagaan, patroli, pemeriksaan tamu/kendaraan/barang, dan penanganan darurat.</li>
-            </ul>
-            <br>
+        <h3>Anggota Security:</h3>
+        <ul>
+          <li>
+            Melaksanakan penjagaan, patroli, pemeriksaan tamu/kendaraan/barang,
+            dan penanganan darurat.
+          </li>
+        </ul>
+        <br />
 
-            <h2>3. Prosedur Utama</h2>
+        <h2>3. Prosedur Utama</h2>
 
-            <h3>A. Pengaturan dan Penjagaan</h3>
-            <ul>
-                <li>Verifikasi identitas karyawan/tamu.</li>
-                <li>Pengaturan parkir dan lalu lintas.</li>
-                <li>Serah terima tugas dengan pemeriksaan inventaris, buku mutasi, dan kondisi lokasi.</li>
-                <li>Waspada terhadap orang/barang mencurigakan.</li>
-            </ul>
+        <h3>A. Pengaturan dan Penjagaan</h3>
+        <ul>
+          <li>Verifikasi identitas karyawan/tamu.</li>
+          <li>Pengaturan parkir dan lalu lintas.</li>
+          <li>
+            Serah terima tugas dengan pemeriksaan inventaris, buku mutasi, dan
+            kondisi lokasi.
+          </li>
+          <li>Waspada terhadap orang/barang mencurigakan.</li>
+        </ul>
 
-            <h3>B. Patroli</h3>
-            <ul>
-                <li>Dilakukan setiap 1 jam dengan rute acak.</li>
-                <li>Fokus pada area rawan: ruang mesin, gudang, instalasi listrik, dll.</li>
-                <li>Pencatatan temuan dalam checklist patroli.</li>
-            </ul>
+        <h3>B. Patroli</h3>
+        <ul>
+          <li>Dilakukan setiap 1 jam dengan rute acak.</li>
+          <li>
+            Fokus pada area rawan: ruang mesin, gudang, instalasi listrik, dll.
+          </li>
+          <li>Pencatatan temuan dalam checklist patroli.</li>
+        </ul>
 
-            <h3>C. Pemeriksaan</h3>
-            <ul>
-                <li>Pemeriksaan tas, tubuh (body search), dan kendaraan menggunakan detektor logam.</li>
-                <li>Verifikasi surat jalan untuk barang keluar/masuk.</li>
-            </ul>
+        <h3>C. Pemeriksaan</h3>
+        <ul>
+          <li>
+            Pemeriksaan tas, tubuh (body search), dan kendaraan menggunakan
+            detektor logam.
+          </li>
+          <li>Verifikasi surat jalan untuk barang keluar/masuk.</li>
+        </ul>
 
-            <h3>D. Penanganan Insiden</h3>
-            <ul>
-                <li>Amankan TKP, tangkap pelaku (jika tertangkap tangan), dan laporkan ke Polri.</li>
-                <li>Isolasi area, laporkan ke atasan/Polri, dan hindari menyentuh barang mencurigakan.</li>
-                <li>Pertolongan pertama untuk pendarahan, patah tulang, shock, atau keracunan sebelum dirujuk ke rumah sakit.</li>
-            </ul>
+        <h3>D. Penanganan Insiden</h3>
+        <ul>
+          <li>
+            Amankan TKP, tangkap pelaku (jika tertangkap tangan), dan laporkan
+            ke Polri.
+          </li>
+          <li>
+            Isolasi area, laporkan ke atasan/Polri, dan hindari menyentuh barang
+            mencurigakan.
+          </li>
+          <li>
+            Pertolongan pertama untuk pendarahan, patah tulang, shock, atau
+            keracunan sebelum dirujuk ke rumah sakit.
+          </li>
+        </ul>
 
-            <h3>E. Pengamanan Khusus</h3>
-            <ul>
-                <li>Sterilisasi lokasi, pemeriksaan kendaraan/makanan, dan koordinasi dengan regu pengawal.</li>
-                <li>Pengaturan parkir, koordinasi dengan panitia, dan antisipasi kerumunan massa.</li>
-            </ul>
-            <br>
+        <h3>E. Pengamanan Khusus</h3>
+        <ul>
+          <li>
+            Sterilisasi lokasi, pemeriksaan kendaraan/makanan, dan koordinasi
+            dengan regu pengawal.
+          </li>
+          <li>
+            Pengaturan parkir, koordinasi dengan panitia, dan antisipasi
+            kerumunan massa.
+          </li>
+        </ul>
+        <br />
 
-            <h2>4. Protokol Komunikasi</h2>
-            <ul>
-                <li>Salam resmi, catat detail penelepon, dan sampaikan informasi secara profesional.</li>
-                <li>Gunakan kode komunikasi standar dan laporkan temuan patroli.</li>
-            </ul>
-            <br>
+        <h2>4. Protokol Komunikasi</h2>
+        <ul>
+          <li>
+            Salam resmi, catat detail penelepon, dan sampaikan informasi secara
+            profesional.
+          </li>
+          <li>Gunakan kode komunikasi standar dan laporkan temuan patroli.</li>
+        </ul>
+        <br />
 
-            <h2>5. Disiplin dan Penampilan</h2>
-            <ul>
-                <li>Seragam rapi, rambut/janggut dipotong pendek, dan sikap sopan.</li>
-                <li>Larangan merokok/menggunakan ponsel saat bertugas.</li>
-            </ul>
-            <br>
+        <h2>5. Disiplin dan Penampilan</h2>
+        <ul>
+          <li>
+            Seragam rapi, rambut/janggut dipotong pendek, dan sikap sopan.
+          </li>
+          <li>Larangan merokok/menggunakan ponsel saat bertugas.</li>
+        </ul>
+        <br />
 
-            <h2>6. Pelaporan</h2>
-            <ul>
-                <li>Laporan harian (buku mutasi) mencakup kronologi insiden, temuan patroli, dan kondisi lokasi.</li>
-                <li>Pelaporan cepat ke atasan/Polri untuk insiden kritis (pencurian, kekerasan, bom).</li>
-            </ul>
-            <br>
+        <h2>6. Pelaporan</h2>
+        <ul>
+          <li>
+            Laporan harian (buku mutasi) mencakup kronologi insiden, temuan
+            patroli, dan kondisi lokasi.
+          </li>
+          <li>
+            Pelaporan cepat ke atasan/Polri untuk insiden kritis (pencurian,
+            kekerasan, bom).
+          </li>
+        </ul>
+        <br />
 
-            <h2>Poin Penting:</h2>
-            <ul>
-                <li>SOP menekankan pencegahan melalui patroli rutin, pemeriksaan ketat, dan koordinasi antar tim.</li>
-                <li>Respons cepat dan terstruktur terhadap insiden untuk meminimalkan risiko.</li>
-                <li>Kepatuhan pada prosedur hukum (misalnya, penyerahan pelaku ke Polri tanpa main hakim sendiri).</li>
-                <li>Pembinaan anggota secara berkala untuk meningkatkan profesionalisme.</li>
-            </ul>
-            <p>Dokumen ini menjadi acuan operasional untuk memastikan lingkungan kerja yang aman, tertib, dan sesuai standar K3.</p>
+        <h2>Poin Penting:</h2>
+        <ul>
+          <li>
+            SOP menekankan pencegahan melalui patroli rutin, pemeriksaan ketat,
+            dan koordinasi antar tim.
+          </li>
+          <li>
+            Respons cepat dan terstruktur terhadap insiden untuk meminimalkan
+            risiko.
+          </li>
+          <li>
+            Kepatuhan pada prosedur hukum (misalnya, penyerahan pelaku ke Polri
+            tanpa main hakim sendiri).
+          </li>
+          <li>
+            Pembinaan anggota secara berkala untuk meningkatkan profesionalisme.
+          </li>
+        </ul>
+        <p>
+          Dokumen ini menjadi acuan operasional untuk memastikan lingkungan
+          kerja yang aman, tertib, dan sesuai standar K3.
+        </p>
 
-            <br>
-
-        </div>
+        <br />
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

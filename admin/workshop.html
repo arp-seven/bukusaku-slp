@@ -1,190 +1,223 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keselamatan Di Workshop</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>KESELAMATAN DI WORKSHOP</span>
-        <span></span> <!-- Spacer -->
+      <a href="menu_sop.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>KESELAMATAN DI WORKSHOP</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR KESELAMATAN BEKERJA DI WORKSHOP </h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR KESELAMATAN BEKERJA DI WORKSHOP</h1>
+      </div>
 
-        <div class="section">
-            <h2>1. TUJUAN</h2>
-            <p>Menciptakan sistem kerja yang efektif dan efisien melalui penerapan 6S (Sortir, Set in Order, Shine, Standardize, Sustain & Safety).</p>
-            <br>
-            <h2>2. DEFINISI</h2>
-            <ul>
-                <li>Sortir: Menghilangkan material yang tidak diinginkan atau tidak dibutuhkan.</li>
-                <li>Set In Order: Mengatur semua pada area kerja agar pengambilan dan penyimpanan dilakukan dengan cepat.</li>
-                <li>Shine: Membersihkan dan memeriksa area kerja.</li>
-                <li>Standardize: Membuat metode standarisasi untuk menjaga kerapian, ketertiban, dan kebersihan.</li>
-                <li>Sustain: Selalu berkomitmen dengan metode standarisasi dan mempraktikkan sebagai rutinitas sehari-hari.</li>
-                <li>Safety: Memastikan lingkungan atau area kerja yang aman serta bebas dari bahaya yang dapat dikenali.</li>
-            </ul>
-            <br>
-            <h2>3. PENANGGUNG JAWAB</h2>
-            <ul>
-                <li>Kepala Workshop/ BM</li>
-                <li>SPV Engineering</li>
-                <li>Teknisi / Crew</li>
-                <li>Safety</li>
-            </ul>
-            <br>
-            <h2>4. PROSEDUR</h2>
-            <br>
-            <table>
-                <tr>
-                    <th align="left">Rincian Kegiatan</th>
-                    <th align="left">Penanggung Jawab</th>
-                </tr>
-                <tr>
-                    <td>Menghilangkan material yang tidak diinginkan atau tidak dibutuhkan lagi</td>
-                    <td>SPV & Teknisi/Crew</td>
-                </tr>
-                <tr>
-                    <td>Mengatur semuanya pada area kerja agar pengambilan dan penyimpanan dilakukan dengan cepat</td>
-                    <td>Teknisi/Crew</td>
-                </tr>
-                <tr>
-                    <td>Membersihkan dan memeriksa area kerja</td>
-                    <td>Teknisi/Crew</td>
-                </tr>
-                <tr>
-                    <td>Membuat metode standarisasi untuk menjaga kerapian, ketertiban, dan kebersihan</td>
-                    <td>Teknisi/Crew & Kepala Workshop</td>
-                </tr>
-                <tr>
-                    <td>Selalu berkomitmen dengan metode standarisasi dan mempraktikkannya sebagai rutinitas sehari-hari</td>
-                    <td>Kepala Workshop/BM</td>
-                </tr>
-                <tr>
-                    <td>Memastikan lingkungan atau area kerja yang aman serta bebas dari bahaya yang dapat dikenali</td>
-                    <td>Safety & Kepala Workshop</td>
-                </tr>
-            </table>
-            <br>
-        </div>
+      <div class="section">
+        <h2>1. TUJUAN</h2>
+        <p>
+          Menciptakan sistem kerja yang efektif dan efisien melalui penerapan 6S
+          (Sortir, Set in Order, Shine, Standardize, Sustain & Safety).
+        </p>
+        <br />
+        <h2>2. DEFINISI</h2>
+        <ul>
+          <li>
+            Sortir: Menghilangkan material yang tidak diinginkan atau tidak
+            dibutuhkan.
+          </li>
+          <li>
+            Set In Order: Mengatur semua pada area kerja agar pengambilan dan
+            penyimpanan dilakukan dengan cepat.
+          </li>
+          <li>Shine: Membersihkan dan memeriksa area kerja.</li>
+          <li>
+            Standardize: Membuat metode standarisasi untuk menjaga kerapian,
+            ketertiban, dan kebersihan.
+          </li>
+          <li>
+            Sustain: Selalu berkomitmen dengan metode standarisasi dan
+            mempraktikkan sebagai rutinitas sehari-hari.
+          </li>
+          <li>
+            Safety: Memastikan lingkungan atau area kerja yang aman serta bebas
+            dari bahaya yang dapat dikenali.
+          </li>
+        </ul>
+        <br />
+        <h2>3. PENANGGUNG JAWAB</h2>
+        <ul>
+          <li>Kepala Workshop/ BM</li>
+          <li>SPV Engineering</li>
+          <li>Teknisi / Crew</li>
+          <li>Safety</li>
+        </ul>
+        <br />
+        <h2>4. PROSEDUR</h2>
+        <br />
+        <table>
+          <tr>
+            <th align="left">Rincian Kegiatan</th>
+            <th align="left">Penanggung Jawab</th>
+          </tr>
+          <tr>
+            <td>
+              Menghilangkan material yang tidak diinginkan atau tidak dibutuhkan
+              lagi
+            </td>
+            <td>SPV & Teknisi/Crew</td>
+          </tr>
+          <tr>
+            <td>
+              Mengatur semuanya pada area kerja agar pengambilan dan penyimpanan
+              dilakukan dengan cepat
+            </td>
+            <td>Teknisi/Crew</td>
+          </tr>
+          <tr>
+            <td>Membersihkan dan memeriksa area kerja</td>
+            <td>Teknisi/Crew</td>
+          </tr>
+          <tr>
+            <td>
+              Membuat metode standarisasi untuk menjaga kerapian, ketertiban,
+              dan kebersihan
+            </td>
+            <td>Teknisi/Crew & Kepala Workshop</td>
+          </tr>
+          <tr>
+            <td>
+              Selalu berkomitmen dengan metode standarisasi dan mempraktikkannya
+              sebagai rutinitas sehari-hari
+            </td>
+            <td>Kepala Workshop/BM</td>
+          </tr>
+          <tr>
+            <td>
+              Memastikan lingkungan atau area kerja yang aman serta bebas dari
+              bahaya yang dapat dikenali
+            </td>
+            <td>Safety & Kepala Workshop</td>
+          </tr>
+        </table>
+        <br />
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

@@ -1,236 +1,268 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Security</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="security.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>SECURITY</span>
-        <span></span> <!-- Spacer -->
+      <a href="security.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>SECURITY</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR MENGISI BUKU TAMU, MUTASI, PATROLI DLL</h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR MENGISI BUKU TAMU, MUTASI, PATROLI DLL</h1>
+      </div>
 
-        <div class="section">
-            <h2>1. Latar Belakang dan Tujuan</h2>
-            <p>Prosedur standar ini dibuat sebagai pedoman dan panduan operasi kerja petugas security/satpam dalam mengisi buku tamu, buku telepon, buku patroli, dan buku mutasi.</p>
-            <br>
-            <h2>2. Tujuan</h2>
-            <p>Agar petugas security dapat melakukan pengisian buku tamu, telepon, mutasi, dan patroli secara baik dan benar.</p>
-            <br>
-            <h2>3. Ruang Lingkup</h2>
-            <p>Standar operasional prosedur ini mencakup seluruh aktivitas pengisian buku tamu, buku telepon, buku patroli, dan buku mutasi, sejak aktivitas dimulai hingga selesai.</p>
-            <br>
-            <h2>4. Tanggung Jawab</h2>
-            <ul>
-                <li>Kadiv GA</li>
-                <li>Chief Satpam</li>
-                <li>Pelaksana tugas</li>
-            </ul>
-            <br>
-            <h2>5. Definisi</h2>
-            <ul>
-                <li><strong>Buku tamu:</strong> Buku untuk mencatat keluar-masuknya tamu.</li>
-                <li><strong>Buku telepon:</strong> Buku untuk mencatat keluar-masuknya telepon.</li>
-                <li><strong>Buku Patroli:</strong> Buku untuk mencatat setiap keadaan atau situasi selama patroli.</li>
-                <li><strong>Buku Mutasi:</strong> Buku untuk mencatat setiap kondisi di area perusahaan.</li>
-            </ul>
-            <br>
-            <h2>6. Dokumen yang Digunakan</h2>
-            <ul>
-                <li>Buku tamu</li>
-                <li>Buku telepon</li>
-                <li>Buku Patroli</li>
-                <li>Buku Mutasi</li>
-            </ul>
-            <br>
-            <h2>7. Alat dan Perlengkapan</h2>
-            <ul>
-                <li>KTA (Kartu Tanda Anggota)</li>
-                <li>Atribut (Lambang)</li>
-                <li>Alat Tulis Kantor</li>
-            </ul>
-            <br>
-            <h2>8. Prosedur Pelaksanaan</h2>
+      <div class="section">
+        <h2>1. Latar Belakang dan Tujuan</h2>
+        <p>
+          Prosedur standar ini dibuat sebagai pedoman dan panduan operasi kerja
+          petugas security/satpam dalam mengisi buku tamu, buku telepon, buku
+          patroli, dan buku mutasi.
+        </p>
+        <br />
+        <h2>2. Tujuan</h2>
+        <p>
+          Agar petugas security dapat melakukan pengisian buku tamu, telepon,
+          mutasi, dan patroli secara baik dan benar.
+        </p>
+        <br />
+        <h2>3. Ruang Lingkup</h2>
+        <p>
+          Standar operasional prosedur ini mencakup seluruh aktivitas pengisian
+          buku tamu, buku telepon, buku patroli, dan buku mutasi, sejak
+          aktivitas dimulai hingga selesai.
+        </p>
+        <br />
+        <h2>4. Tanggung Jawab</h2>
+        <ul>
+          <li>Kadiv GA</li>
+          <li>Chief Satpam</li>
+          <li>Pelaksana tugas</li>
+        </ul>
+        <br />
+        <h2>5. Definisi</h2>
+        <ul>
+          <li>
+            <strong>Buku tamu:</strong> Buku untuk mencatat keluar-masuknya
+            tamu.
+          </li>
+          <li>
+            <strong>Buku telepon:</strong> Buku untuk mencatat keluar-masuknya
+            telepon.
+          </li>
+          <li>
+            <strong>Buku Patroli:</strong> Buku untuk mencatat setiap keadaan
+            atau situasi selama patroli.
+          </li>
+          <li>
+            <strong>Buku Mutasi:</strong> Buku untuk mencatat setiap kondisi di
+            area perusahaan.
+          </li>
+        </ul>
+        <br />
+        <h2>6. Dokumen yang Digunakan</h2>
+        <ul>
+          <li>Buku tamu</li>
+          <li>Buku telepon</li>
+          <li>Buku Patroli</li>
+          <li>Buku Mutasi</li>
+        </ul>
+        <br />
+        <h2>7. Alat dan Perlengkapan</h2>
+        <ul>
+          <li>KTA (Kartu Tanda Anggota)</li>
+          <li>Atribut (Lambang)</li>
+          <li>Alat Tulis Kantor</li>
+        </ul>
+        <br />
+        <h2>8. Prosedur Pelaksanaan</h2>
 
-            <h3>Buku Tamu (Visitor Book)</h3>
-            <p>Buku untuk mencatat keluar-masuknya tamu, yang mencakup:</p>
+        <h3>Buku Tamu (Visitor Book)</h3>
+        <p>Buku untuk mencatat keluar-masuknya tamu, yang mencakup:</p>
+        <ul>
+          <li>Tanggal</li>
+          <li>Nama tamu</li>
+          <li>Alamat tamu</li>
+          <li>Nama orang yang akan ditemui</li>
+          <li>Alamat orang yang akan ditemui</li>
+          <li>Keperluan</li>
+          <li>Jam masuk</li>
+          <li>Jam keluar</li>
+          <li>Tanda tangan</li>
+          <li>Nomor kendaraan tamu</li>
+          <li>Nomor kartu ID card tamu</li>
+        </ul>
+        <br />
+        <h3>Buku Telepon</h3>
+        <p>Buku untuk mencatat keluar-masuknya telepon, yang mencakup:</p>
+        <ul>
+          <li>Hari, tanggal</li>
+          <li>Jam</li>
+          <li>Nama penelepon</li>
+          <li>Untuk siapa</li>
+          <li>Isi berita</li>
+          <li>Nama penerima telepon</li>
+        </ul>
+        <br />
+        <h3>Buku Patroli</h3>
+        <p>
+          Buku untuk mencatat setiap kondisi atau situasi selama patroli, yang
+          mencakup:
+        </p>
+        <ul>
+          <li>Hari, tanggal</li>
+          <li>Jam patroli</li>
+          <li>Keterangan</li>
+          <li>Bukti temuan</li>
+          <li>Tanda tangan petugas</li>
+        </ul>
+        <br />
+        <h3>Buku Mutasi</h3>
+        <p>
+          Buku untuk mencatat setiap keadaan di area perusahaan, yang mencakup:
+        </p>
+        <ul>
+          <li>
+            <strong>Kolom I:</strong>
             <ul>
-                <li>Tanggal</li>
-                <li>Nama tamu</li>
-                <li>Alamat tamu</li>
-                <li>Nama orang yang akan ditemui</li>
-                <li>Alamat orang yang akan ditemui</li>
-                <li>Keperluan</li>
-                <li>Jam masuk</li>
-                <li>Jam keluar</li>
-                <li>Tanda tangan</li>
-                <li>Nomor kendaraan tamu</li>
-                <li>Nomor kartu ID card tamu</li>
+              <li>Nama petugas</li>
+              <li>Tanggal jaga</li>
+              <li>Waktu jaga</li>
             </ul>
-            <br>
-            <h3>Buku Telepon</h3>
-            <p>Buku untuk mencatat keluar-masuknya telepon, yang mencakup:</p>
+          </li>
+          <li>
+            <strong>Kolom II:</strong>
             <ul>
-                <li>Hari, tanggal</li>
-                <li>Jam</li>
-                <li>Nama penelepon</li>
-                <li>Untuk siapa</li>
-                <li>Isi berita</li>
-                <li>Nama penerima telepon</li>
+              <li>Jam</li>
+              <li>Keterangan kejadian (kendaraan/orang/tamu keluar-masuk)</li>
             </ul>
-            <br>
-            <h3>Buku Patroli</h3>
-            <p>Buku untuk mencatat setiap kondisi atau situasi selama patroli, yang mencakup:</p>
+          </li>
+          <li>
+            <strong>Kolom III:</strong>
             <ul>
-                <li>Hari, tanggal</li>
-                <li>Jam patroli</li>
-                <li>Keterangan</li>
-                <li>Bukti temuan</li>
-                <li>Tanda tangan petugas</li>
+              <li>Acara serah terima satpam</li>
             </ul>
-            <br>
-            <h3>Buku Mutasi</h3>
-            <p>Buku untuk mencatat setiap keadaan di area perusahaan, yang mencakup:</p>
-            <ul>
-                <li><strong>Kolom I:</strong>
-                    <ul>
-                        <li>Nama petugas</li>
-                        <li>Tanggal jaga</li>
-                        <li>Waktu jaga</li>
-                    </ul>
-                </li>
-                <li><strong>Kolom II:</strong>
-                    <ul>
-                        <li>Jam</li>
-                        <li>Keterangan kejadian (kendaraan/orang/tamu keluar-masuk)</li>
-                    </ul>
-                </li>
-                <li><strong>Kolom III:</strong>
-                    <ul>
-                        <li>Acara serah terima satpam</li>
-                    </ul>
-                </li>
-            </ul><br>
-        </div>
+          </li>
+        </ul>
+        <br />
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

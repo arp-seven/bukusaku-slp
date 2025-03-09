@@ -1,187 +1,222 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Security</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="security.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>SECURITY</span>
-        <span></span> <!-- Spacer -->
+      <a href="security.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>SECURITY</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR MENERIMA TELPON </h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR MENERIMA TELPON</h1>
+      </div>
 
-        <div class="section">
-            <h2>1. Latar Belakang dan Tujuan</h2>
-            <p>Standar Operasional Prosedur ini dibuat sebagai pedoman yang mengatur prosedur kerja dalam melakukan semua aktivitas menerima telepon.</p>
-            <br>
-            <h2>2. Ruang Lingkup</h2>
-            <p>Ruang lingkup standar operasional prosedur ini mencakup aktivitas sejak telepon berdering hingga menerima dan mencatat ke buku telepon.</p>
-            <br>
+      <div class="section">
+        <h2>1. Latar Belakang dan Tujuan</h2>
+        <p>
+          Standar Operasional Prosedur ini dibuat sebagai pedoman yang mengatur
+          prosedur kerja dalam melakukan semua aktivitas menerima telepon.
+        </p>
+        <br />
+        <h2>2. Ruang Lingkup</h2>
+        <p>
+          Ruang lingkup standar operasional prosedur ini mencakup aktivitas
+          sejak telepon berdering hingga menerima dan mencatat ke buku telepon.
+        </p>
+        <br />
 
-            <h2>3. Tanggung Jawab</h2>
+        <h2>3. Tanggung Jawab</h2>
+        <ul>
+          <li>Kadiv GA</li>
+          <li>Chief Security</li>
+          <li>Petugas jaga</li>
+        </ul>
+        <br />
+
+        <h2>4. Dokumen yang digunakan</h2>
+        <ul>
+          <li>Buku Telepon</li>
+        </ul>
+        <br />
+
+        <h2>5. Alat dan Perlengkapan</h2>
+        <ul>
+          <li>Telepon</li>
+          <li>Ballpoint</li>
+        </ul>
+        <br />
+
+        <h2>6. Prosedur Pelaksanaan</h2>
+        <ul>
+          <li>
+            Segera angkat telepon ketika berdering, jangan biarkan telepon
+            berdering berulang kali.
+          </li>
+          <li>
+            Berikan salam dengan sopan:
+            <span class="highlight"
+              >"Selamat pagi/siang/sore, security perusahaan, dengan siapa kami
+              bicara, ada yang bisa dibantu?"</span
+            >
+          </li>
+          <li>
+            Setelah penelepon menyebutkan identitasnya dan ingin berbicara
+            dengan seseorang, ucapkan:<br />
+            <span class="highlight"
+              >"Dengan (sebutkan nama dan departemen)... mohon tunggu
+              Pak/Bu."</span
+            >
+          </li>
+          <li>
+            Segera hubungi orang yang dimaksud dan konfirmasi:<br />
+            <span class="highlight"
+              >"Selamat pagi/siang/sore… Pak/Ibu, satpam jaga di sini, ada
+              telepon dari… bisa diterima?"</span
+            >
+          </li>
+          <li>
+            Jika sudah ada persetujuan, sambungkan telepon dengan mengucapkan:
+            <span class="highlight">"Silakan."</span>
+          </li>
+          <li>
+            Jika orang yang dimaksud tidak ada, sampaikan pesan dengan sopan dan
+            catat dalam message list form.
+          </li>
+          <li>
+            Semua telepon yang diterima harus dicatat dengan informasi berikut:
             <ul>
-                <li>Kadiv GA</li>
-                <li>Chief Security</li>
-                <li>Petugas jaga</li>
+              <li>Siapa yang menelepon</li>
+              <li>Dari mana</li>
+              <li>Untuk siapa</li>
+              <li>Isi berita (tanggal, hari, jam)</li>
+              <li>Siapa yang menerima telepon</li>
             </ul>
-            <br>
-
-            <h2>4. Dokumen yang digunakan</h2>
-            <ul>
-                <li>Buku Telepon</li>
-            </ul>
-            <br>
-
-            <h2>5. Alat dan Perlengkapan</h2>
-            <ul>
-                <li>Telepon</li>
-                <li>Ballpoint</li>
-            </ul>
-            <br>
-
-            <h2>6. Prosedur Pelaksanaan</h2>
-            <ul>
-                <li>Segera angkat telepon ketika berdering, jangan biarkan telepon berdering berulang kali.</li>
-                <li>Berikan salam dengan sopan: <span class="highlight">"Selamat pagi/siang/sore, security perusahaan, dengan siapa kami bicara, ada yang bisa dibantu?"</span></li>
-                <li>Setelah penelepon menyebutkan identitasnya dan ingin berbicara dengan seseorang, ucapkan:<br>
-                    <span class="highlight">"Dengan (sebutkan nama dan departemen)... mohon tunggu Pak/Bu."</span>
-                </li>
-                <li>Segera hubungi orang yang dimaksud dan konfirmasi:<br>
-                    <span class="highlight">"Selamat pagi/siang/sore… Pak/Ibu, satpam jaga di sini, ada telepon dari… bisa diterima?"</span>
-                </li>
-                <li>Jika sudah ada persetujuan, sambungkan telepon dengan mengucapkan: <span class="highlight">"Silakan."</span></li>
-                <li>Jika orang yang dimaksud tidak ada, sampaikan pesan dengan sopan dan catat dalam message list form.</li>
-                <li>Semua telepon yang diterima harus dicatat dengan informasi berikut:
-                    <ul>
-                        <li>Siapa yang menelepon</li>
-                        <li>Dari mana</li>
-                        <li>Untuk siapa</li>
-                        <li>Isi berita (tanggal, hari, jam)</li>
-                        <li>Siapa yang menerima telepon</li>
-                    </ul>
-                </li>
-                <li>Dalam menerima telepon, pastikan suara jelas dan berwibawa, hindari kata-kata yang kurang sopan.</li>
-            </ul><br>
-        </div>
+          </li>
+          <li>
+            Dalam menerima telepon, pastikan suara jelas dan berwibawa, hindari
+            kata-kata yang kurang sopan.
+          </li>
+        </ul>
+        <br />
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

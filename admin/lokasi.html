@@ -1,297 +1,443 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keselamatan Di Lokasi</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>KESELAMATAN DI LOKASI</span>
-        <span></span> <!-- Spacer -->
+      <a href="menu_sop.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>KESELAMATAN DI LOKASI</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR KESELAMATAN BEKERJA DI LOKASI STP </h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR KESELAMATAN BEKERJA DI LOKASI STP</h1>
+      </div>
 
-        <div class="section">
-            <h2>1. TUJUAN</h2>
-            <p>Untuk memastikan semua kegiatan operasional building dapat berjalan dengan baik dan tidak terjadi kecelakaan di tempat kerja di area PT. SLP.</p>
-            <br>
-            <h2>2. RUANG LINGKUP</h2>
-            <p>Instruksi/SOP kerja ini menjelaskan tugas dan tanggung jawab dalam pengoperasian serta pengelolaan STP.</p>
-            <br>
-            <h2>3. KESELAMATAN KERJA</h2>
-            <p>Untuk mencegah timbulnya hal-hal yang tidak diinginkan, yang dapat menyebabkan kecelakaan kerja yang dapat membahayakan keselamatan pekerja dalam pengoperasian unit pengolahan air limbah, maka perlu diperhatikan hal-hal sebagai berikut</p>
+      <div class="section">
+        <h2>1. TUJUAN</h2>
+        <p>
+          Untuk memastikan semua kegiatan operasional building dapat berjalan
+          dengan baik dan tidak terjadi kecelakaan di tempat kerja di area PT.
+          SLP.
+        </p>
+        <br />
+        <h2>2. RUANG LINGKUP</h2>
+        <p>
+          Instruksi/SOP kerja ini menjelaskan tugas dan tanggung jawab dalam
+          pengoperasian serta pengelolaan STP.
+        </p>
+        <br />
+        <h2>3. KESELAMATAN KERJA</h2>
+        <p>
+          Untuk mencegah timbulnya hal-hal yang tidak diinginkan, yang dapat
+          menyebabkan kecelakaan kerja yang dapat membahayakan keselamatan
+          pekerja dalam pengoperasian unit pengolahan air limbah, maka perlu
+          diperhatikan hal-hal sebagai berikut
+        </p>
+        <ul>
+          <li>
+            Gunakan sarung tangan pelindung, masker, dan kacamata pelindung pada
+            saat menggunakan bahan kimia yang berbahaya (bersifat korosif)
+            seperti Chlorine. Baik pada saat memindahkan bahan kimia, saat
+            pembuatan larutan, dan saat pencucian tangki.
+          </li>
+          <li>
+            Bacalah petunjuk penanganan bahan kimia yang diberikan oleh supplier
+            mengingat beberapa bahan kimia mempunyai sifat korosif, mudah
+            terbakar / meledak dan beracun jika dihirup
+          </li>
+          <li>
+            Jangan makan, minum atau merokok selama menangani bahan-bahan kimia
+          </li>
+          <li>
+            Simpanlah bahan kimia di tempat yang telah ditentukan yaitu di
+            tempat yang sejuk, kering dan mempunyai ventilasi udara yang baik
+          </li>
+          <li>
+            Sisa karung / jerigen bahan kimia sebaiknya langsung dibuang dan
+            tidak dipergunakan lagi untuk keperluan lain
+          </li>
+          <li>
+            Beri petunjuk (nama) pada jerigen, karung atau kemasan bahan kimia
+            lainnya, sehingga mudah untuk dikenali dan diketahui
+          </li>
+          <li>
+            Bersihkan selalu lantai dari sisa-sisa bahan kimia, oli dan pelumas
+          </li>
+          <li>
+            Bacalah dengan baik petunjuk pemeliharaan, perawatan dan perbaikan
+            peralatan ( pompa ,motor,blower dll )
+          </li>
+          <li>
+            Penanganan bahan kimia hanya boleh dilakukan oleh orang / operator
+            khusus yang bertugas dan mempunyai wewenang / izin
+          </li>
+          <li>
+            Pengaturan Panel Pengendali Unit Pengolahan Air Limbah yang terdapat
+            di Ruang Operator hanya boleh dilakukan oleh orang / operator khusus
+            yang bertugas dan mempunyai wewenang / izin
+          </li>
+          <li>
+            Untuk mencegah terjadinya hal-hal lain yang tidak diinginkan, maka
+            hanya orang atau operator khusus yang bertugas dan mempunyai
+            wewenang / izin, yang boleh memasuki Area Pengolahan Air Limbah
+          </li>
+        </ul>
+        <br />
+        <h2>4. PENGOPERASIAN DAN PEMELIHARAAN SISTEM STP</h2>
+        <h3>A. PERSIAPAN</h3>
+        <ul>
+          <li>
+            Sebelum mulai menjalankan unit sewage treatment plant, periksalah
+            dahulu tangki-tangki bahan kimia yang tersedia. Buatlah larutan
+            sesuai yang diperlukan
+          </li>
+          <li>Lakukan pemeriksaan panel elektrik</li>
+          <li>Lakukan pemeriksaan peralatan</li>
+          <li>Pemeriksaan pompa, blower</li>
+          <li>
+            Pemeriksaan posisi valve pada pipa aliran air limbah, aliran bahan
+            kimia, aliran oksigen dari blower
+          </li>
+          <li>Kalibrasi laju alir pompa dosing</li>
+        </ul>
+        <br />
+        <h3>B. OPERASI START-UP</h3>
+        <br />
+        <h4>Panel Kontrol (MCC)</h4>
+        <ul>
+          <li>
+            Hidupkan sistem panel elektrik dengan mengaktifkan MCCB utama (Q0)
+          </li>
+          <li>
+            Periksa tegangan (voltase, frekwensi) display yang ada pada muka
+            panel
+          </li>
+          <li>Listrik yang masuk harus 380V, frekwensi 50 Hz</li>
+          <li>Hidupkan MCB control</li>
+        </ul>
+        <br />
+        <h4>Posisi Auto Panel Kontrol</h4>
+        <ul>
+          <li>
+            Hidupkan sistem panel elektrik, aktifkan MCB Q1. b) Putar selector
+            switch A/M ke posisi Auto
+          </li>
+          <li>
+            Tekan tombol start pada dosing pump klorin, dengan tanda lampu hijau
+          </li>
+          <li>
+            Pada posisi auto ini equal pump 1 & 2, effluent pump 1 & 2 akan
+            bekerja dengan indicator WLC (floating switch) yang terpasang, Air
+            Blower akan bekerja bergantian setiap 2 jam non stop 24 jam
+          </li>
+        </ul>
+        <br />
+        <h4>Posisi Manual Panel Kontrol</h4>
+        <ul>
+          <li>Hidupkan sistem panel elektrik, aktifkan MCB Q1</li>
+          <li>Putar selector switch A/M ke posisi Manual</li>
+          <li>
+            Tekan tombol start pada dosing pump klorin, dengan tanda lampu hijau
+          </li>
+          <li>
+            Pada posisi manual ini semua peralatan seperti equal pump1 & 2,
+            effluent pump 1 & 2, Air Blower, akan bekerja dengan indicator push
+            button
+          </li>
+        </ul>
+        <br />
+        <h4>Sistem Injeksi Bahan Kimia</h4>
+        <p>
+          Hidupkan sistem panel elektrik putar selector switch A/M keposisi
+          Manual. Tekan tombol hijau pada pompa dosing yang mana yang akan
+          bekerja dengan tekan tombol power pada pompa dosing , perhatikan
+          setiap berkala pengisian bahan kimia pada tangki klorin, sebelumnya
+          sudah disesuaikan konsentrasi dengan proses pengenceran dan di mixer
+          untuk menghomogenkan pencampuran bahan klorin tersebut.
+        </p>
+        <br />
+        <h3 style="color: red">
+          PERINGATAN : OPERATOR WAJIB MENGGUNAKAN SARUNG TANGGAN,MASKER,KACA
+          MATA PADA SAAT PENGISIAN BAHAN KIMIA
+        </h3>
+        <br />
+        <p>
+          Setelah proses awal ini dijalankan maka STP BIOSAFE BSF ST SERIES ini
+          siap dioperasikan. Air limbah yang sudah diproses STP BIOSAFE ini
+          sudah ramah lingkungan dan dapat dialirkan ke Saluran Drainase atau
+          Badan Sungai.
+        </p>
+        <br />
+
+        <h3>C. PEMELIHARAAN RUTIN</h3>
+        <br />
+        <img
+          src="https://i.ibb.co.com/zHCjDBz6/Picture1.png"
+          style="max-width: 100%; height: auto; display: block; margin: auto"
+        />
+        <br />
+        <p>Petunjuk Umum</p>
+        <ul>
+          <ol>
+            <li>
+              Bacalah seluruh petunjuk pengoperasian dan pemeliharaan dengan
+              baik
+            </li>
+            <li>Ikuti petunjuk yang tercantum dalam manual</li>
+            <li>
+              Jangan mencoba memperbaiki / memecahkan sendiri masalah atau
+              kesulitan yang tidak dapat diselesaikan menurut petunjuk yang
+              tercantum dalam buku manual
+            </li>
+            <li>
+              Lakukan kalibrasi peralatan secara rutin sesuai petunjuk buku
+              manual, yaitu kalibrasi laju alir pompa transfer dan pompa dosing.
+              Pemeriksaan sistem panel pengendali harus dilakukan rutin untuk
+              memastikan alat bekerja dengan baik.
+            </li>
+            <li>
+              Perlu disiapkan suku cadang pengganti sesuai spesifikasi peralatan
+              diatas
+            </li>
+            <li>Periksa seluruh baut peralatan secara rutin</li>
+          </ol>
+        </ul>
+        <br />
+
+        <p>Petunjuk Khusus</p>
+        <ol>
+          <ul>
+            <li>Screen : Bersihkan dari sampah dan kotoran sesering mungkin</li>
+            <li>
+              Submersible Pump : Periksa Pompa secara rutin dan bersihkan jika
+              terdapat sampah atau kotoran. Bersihkan Pompa Intake dan Water
+              Level Control Sensor secara rutin
+            </li>
+            <li>
+              Dosing Pump : Periksa pompa dan fungsi setting sesuai system yang
+              telah dijelaskan diatas
+            </li>
+            <li>Daftar Spare Part dan material</li>
             <ul>
-                <li>Gunakan sarung tangan pelindung, masker, dan kacamata pelindung pada saat menggunakan bahan kimia yang berbahaya (bersifat korosif) seperti Chlorine. Baik pada saat memindahkan bahan kimia, saat pembuatan larutan, dan saat pencucian tangki.</li>
-                <li>Bacalah petunjuk penanganan bahan kimia yang diberikan oleh supplier mengingat beberapa bahan kimia mempunyai sifat korosif, mudah terbakar / meledak dan beracun jika dihirup</li>
-                <li>Jangan makan, minum atau merokok selama menangani bahan-bahan kimia</li>
-                <li>Simpanlah bahan kimia di tempat yang telah ditentukan yaitu di tempat yang sejuk, kering dan mempunyai ventilasi udara yang baik</li>
-                <li>Sisa karung / jerigen bahan kimia sebaiknya langsung dibuang dan tidak dipergunakan lagi untuk keperluan lain</li>
-                <li>Beri petunjuk (nama) pada jerigen, karung atau kemasan bahan kimia lainnya, sehingga mudah untuk dikenali dan diketahui</li>
-                <li>Bersihkan selalu lantai dari sisa-sisa bahan kimia, oli dan pelumas</li>
-                <li>Bacalah dengan baik petunjuk pemeliharaan, perawatan dan perbaikan peralatan ( pompa ,motor,blower dll )</li>
-                <li>Penanganan bahan kimia hanya boleh dilakukan oleh orang / operator khusus yang bertugas dan mempunyai wewenang / izin</li>
-                <li>Pengaturan Panel Pengendali Unit Pengolahan Air Limbah yang terdapat di Ruang Operator hanya boleh dilakukan oleh orang / operator khusus yang bertugas dan mempunyai wewenang / izin</li>
-                <li>Untuk mencegah terjadinya hal-hal lain yang tidak diinginkan, maka hanya orang atau operator khusus yang bertugas dan mempunyai wewenang / izin, yang boleh memasuki Area Pengolahan Air Limbah</li>
-
+              <li>Floating Switch</li>
+              <li>Klorin</li>
             </ul>
-            <br>
-            <h2>4. PENGOPERASIAN DAN PEMELIHARAAN SISTEM STP</h2>
-            <h3>A. PERSIAPAN</h3>
+          </ul>
+          <p>
+            Air Blower : Periksa level indicator oli pada blower, penggantian
+            oli blower dilakukan secara berkala menggunakan SAE 90
+          </p>
+        </ol>
+        <br />
+
+        <h3>D. MASALAH DAN PEMECAHANNYA</h3>
+        <br />
+        <ul>
+          <ol>
+            <li>
+              Aliran proses klorinasi berada di luar rentang yang diisyaratkan
+            </li>
+            <p>Penyebab :</p>
             <ul>
-                <li>Sebelum mulai menjalankan unit sewage treatment plant, periksalah dahulu tangki-tangki bahan kimia yang tersedia. Buatlah larutan sesuai yang diperlukan</li>
-                <li>Lakukan pemeriksaan panel elektrik</li>
-                <li>Lakukan pemeriksaan peralatan</li>
-                <li>Pemeriksaan pompa, blower</li>
-                <li>Pemeriksaan posisi valve pada pipa aliran air limbah, aliran bahan kimia, aliran oksigen dari blower</li>
-                <li>Kalibrasi laju alir pompa dosing</li>
+              <li>Dosing Pump tidak mencukupi atau kelebihan</li>
             </ul>
-            <br>
-            <h3>B. OPERASI START-UP</h3><br>
-            <h4>Panel Kontrol (MCC)</h4>
+            <p>Solusi :</p>
             <ul>
-                <li>Hidupkan sistem panel elektrik dengan mengaktifkan MCCB utama (Q0) </li>
-                <li>Periksa tegangan (voltase, frekwensi) display yang ada pada muka panel </li>
-                <li>Listrik yang masuk harus 380V, frekwensi 50 Hz</li>
-                <li>Hidupkan MCB control</li>
+              <li>Atur debit dosing pompa Klorin</li>
+              <li>Atur konsentrasi Klorin dalam tangki dosing</li>
             </ul>
-            <br>
-            <h4>Posisi Auto Panel Kontrol</h4>
+            <br />
+            <li>Debit aliran pompa terlampau kecil atau tidak mengalir</li>
+            <p>Penyebab :</p>
             <ul>
-                <li>Hidupkan sistem panel elektrik, aktifkan MCB Q1. b) Putar selector switch A/M ke posisi Auto</li>
-                <li>Tekan tombol start pada dosing pump klorin, dengan tanda lampu hijau</li>
-                <li>Pada posisi auto ini equal pump 1 & 2, effluent pump 1 & 2 akan bekerja dengan indicator WLC (floating switch) yang terpasang, Air Blower akan bekerja bergantian setiap 2 jam non stop 24 jam</li>
-            </ul><br>
-            <h4>Posisi Manual Panel Kontrol</h4>
-            <ul>
-                <li>Hidupkan sistem panel elektrik, aktifkan MCB Q1
-                <li>Putar selector switch A/M ke posisi Manual</li>
-                <li>Tekan tombol start pada dosing pump klorin, dengan tanda lampu hijau</li>
-                <li>Pada posisi manual ini semua peralatan seperti equal pump1 & 2, effluent pump 1 & 2, Air Blower, akan bekerja dengan indicator push button
-                </li>
-            </ul><br>
-            <h4>Sistem Injeksi Bahan Kimia</h4>
-            <p>Hidupkan sistem panel elektrik putar selector switch A/M keposisi Manual. Tekan tombol hijau pada pompa dosing yang mana yang akan bekerja dengan tekan tombol power pada pompa dosing , perhatikan setiap berkala pengisian bahan kimia pada tangki klorin, sebelumnya sudah disesuaikan konsentrasi dengan proses pengenceran dan di mixer untuk menghomogenkan pencampuran bahan klorin tersebut.</p> <br>
-            <h3 style="color:red;">PERINGATAN : OPERATOR WAJIB MENGGUNAKAN SARUNG TANGGAN,MASKER,KACA MATA PADA SAAT PENGISIAN BAHAN KIMIA
-            </h3><br>
-            <p>Setelah proses awal ini dijalankan maka STP BIOSAFE BSF ST SERIES ini siap dioperasikan. Air limbah yang sudah diproses STP BIOSAFE ini sudah ramah lingkungan dan dapat dialirkan ke Saluran Drainase atau Badan Sungai.</p><br>
-
-            <h3>C. PEMELIHARAAN RUTIN</h3>
-            <br>
-            <img src='https://i.ibb.co.com/zHCjDBz6/Picture1.png' style="max-width: 100%; height: auto; display: block; margin: auto;">
-            <br>
-            <p>Petunjuk Umum</p>
-            <ul>
-                <ol>
-                    <li>Bacalah seluruh petunjuk pengoperasian dan pemeliharaan dengan baik</li>
-                    <li>Ikuti petunjuk yang tercantum dalam manual</li>
-                    <li>Jangan mencoba memperbaiki / memecahkan sendiri masalah atau kesulitan yang tidak dapat diselesaikan menurut petunjuk yang tercantum dalam buku manual</li>
-                    <li>Lakukan kalibrasi peralatan secara rutin sesuai petunjuk buku manual, yaitu kalibrasi laju alir pompa transfer dan pompa dosing. Pemeriksaan sistem panel pengendali harus dilakukan rutin untuk memastikan alat bekerja dengan baik.</li>
-                    <li>Perlu disiapkan suku cadang pengganti sesuai spesifikasi peralatan diatas</li>
-                    <li>Periksa seluruh baut peralatan secara rutin</li>
-                </ol>
-            </ul><br>
-
-            <p>Petunjuk Khusus</p>
-            <ol>
-                <ul>
-                    <li>Screen : Bersihkan dari sampah dan kotoran sesering mungkin</li>
-                    <li>Submersible Pump : Periksa Pompa secara rutin dan bersihkan jika terdapat sampah atau kotoran. Bersihkan Pompa Intake dan Water Level Control Sensor secara rutin</li>
-                    <li>Dosing Pump : Periksa pompa dan fungsi setting sesuai system yang telah dijelaskan diatas</li>
-                    <li>Daftar Spare Part dan material </li>
-                    <ul>
-                        <li>Floating Switch</li>
-                        <li>Klorin</li>
-                    </ul>
-
-                </ul>
-                <p>Air Blower : Periksa level indicator oli pada blower, penggantian oli blower dilakukan secara berkala menggunakan SAE 90</p>
-            </ol>
-            <br>
-
-
-
-            <h3>D. MASALAH DAN PEMECAHANNYA</h3><br>
-            <ul>
-                <ol>
-                    <li>Aliran proses klorinasi berada di luar rentang yang diisyaratkan</li>
-                    <p>Penyebab :</p>
-                    <ul>
-                        <li>Dosing Pump tidak mencukupi atau kelebihan</li>
-                    </ul>
-                    <p>Solusi :</p>
-                    <ul>
-                        <li>Atur debit dosing pompa Klorin</li>
-                        <li>Atur konsentrasi Klorin dalam tangki dosing</li>
-                    </ul><br>
-                    <li>Debit aliran pompa terlampau kecil atau tidak mengalir</li>
-                    <p>Penyebab :</p>
-                    <ul>
-                        <li>Adanya sampah / plastik yang tersumbat pada valve atau pada inlet pompa</li>
-                    </ul>
-                    <p>Solusi :</p>
-                    <ul>
-                        <li>Periksa valve dan inlet pompa serta bersihkan jika perlu</li>
-                    </ul>
-                    <br>
-                    <li>Lumpur / Sludge berwarna kehitaman yang terapung di permukaan ruang sedimentasi</li>
-                    <p>Penyebab :</p>
-                    <ul>
-                        <li>Terjadi proses anaerobik di sedimentasi akibat dari waktu tinggal air hasil treatment yang terlampau lama </li>
-                        <li>Proses pengurasan Lumpur pada sedimentasi tidak dilakukan</li>
-                    </ul>
-                    <p>Solusi :</p>
-                    <ul>
-                        <li>Percepat waktu tinggal lumpur di tangki sedimentasi dengan menambah interval / rentang waktu pembukaan valve backwash lumpur ke Sludge Collector</li>
-                    </ul>
-                </ol>
+              <li>
+                Adanya sampah / plastik yang tersumbat pada valve atau pada
+                inlet pompa
+              </li>
             </ul>
-            <br>
-            <h3>E. PEMAKAIAN BAHAN KIMIA DAN PERHITUNGANNYA</h3><br>
-            <p>Rumus: V1 × N1 = V2 × N2</p>
-            <p>Dimana:</p>
+            <p>Solusi :</p>
             <ul>
-                <li>V1 = Volume larutan 1</li>
-                <li>V2 = Volume larutan 2</li>
-                <li>N1 = Konsentrasi larutan 1</li>
-                <li>N2 = Konsentrasi larutan 2</li>
-            </ul><br>
-            <p>Contoh perhitungan pembuatan larutan Klorin, Klorin konsentrat pekat 97 % = N1</p>
-            <p>Kadar yang diinginkan 5 % = N2</p>
-            <p>Volume larutan yang diinginkan 100 Liter = V2</p>
-            <p>Maka, Klorin pekat yang dibutuhkan ( V1 ) adalah:</p>
-            <p>
-                V1 x N1 = V2 x N2
-                V1= V2X N2 / N1 => V1 = 100X5/97 => V1 = 5,15 Liter
-            </p>
-            <br>
-            <p>
-                Volume air yang dibutuhkan: 100 Liter – 5,15 Liter = 94,85 Liter <br>
-                - Isi tangki dengan 94,85 Liter air <br>
-                - Tambahkan 5,15 Kg Klorin <br>
-                - Aduk hingga homogen
-            </p> <br>
+              <li>Periksa valve dan inlet pompa serta bersihkan jika perlu</li>
+            </ul>
+            <br />
+            <li>
+              Lumpur / Sludge berwarna kehitaman yang terapung di permukaan
+              ruang sedimentasi
+            </li>
+            <p>Penyebab :</p>
+            <ul>
+              <li>
+                Terjadi proses anaerobik di sedimentasi akibat dari waktu
+                tinggal air hasil treatment yang terlampau lama
+              </li>
+              <li>Proses pengurasan Lumpur pada sedimentasi tidak dilakukan</li>
+            </ul>
+            <p>Solusi :</p>
+            <ul>
+              <li>
+                Percepat waktu tinggal lumpur di tangki sedimentasi dengan
+                menambah interval / rentang waktu pembukaan valve backwash
+                lumpur ke Sludge Collector
+              </li>
+            </ul>
+          </ol>
+        </ul>
+        <br />
+        <h3>E. PEMAKAIAN BAHAN KIMIA DAN PERHITUNGANNYA</h3>
+        <br />
+        <p>Rumus: V1 × N1 = V2 × N2</p>
+        <p>Dimana:</p>
+        <ul>
+          <li>V1 = Volume larutan 1</li>
+          <li>V2 = Volume larutan 2</li>
+          <li>N1 = Konsentrasi larutan 1</li>
+          <li>N2 = Konsentrasi larutan 2</li>
+        </ul>
+        <br />
+        <p>
+          Contoh perhitungan pembuatan larutan Klorin, Klorin konsentrat pekat
+          97 % = N1
+        </p>
+        <p>Kadar yang diinginkan 5 % = N2</p>
+        <p>Volume larutan yang diinginkan 100 Liter = V2</p>
+        <p>Maka, Klorin pekat yang dibutuhkan ( V1 ) adalah:</p>
+        <p>
+          V1 x N1 = V2 x N2 V1= V2X N2 / N1 => V1 = 100X5/97 => V1 = 5,15 Liter
+        </p>
+        <br />
+        <p>
+          Volume air yang dibutuhkan: 100 Liter – 5,15 Liter = 94,85 Liter
+          <br />
+          - Isi tangki dengan 94,85 Liter air <br />
+          - Tambahkan 5,15 Kg Klorin <br />
+          - Aduk hingga homogen
+        </p>
+        <br />
 
-            <p>Catatan : Larutan Kimia dapat dibuat lebih pekat lagi untuk mengantisipasi air limbah yang masuk dengan cara menaikkan konsentrasi N2 dalam larutan yang dibuat
-            </p><br>
-        </div>
+        <p>
+          Catatan : Larutan Kimia dapat dibuat lebih pekat lagi untuk
+          mengantisipasi air limbah yang masuk dengan cara menaikkan konsentrasi
+          N2 dalam larutan yang dibuat
+        </p>
+        <br />
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

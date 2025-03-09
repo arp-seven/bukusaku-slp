@@ -1,245 +1,275 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Security</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="security.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>SECURITY</span>
-        <span></span> <!-- Spacer -->
+      <a href="security.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>SECURITY</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR KEADAAN DARURAT </h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR KEADAAN DARURAT</h1>
+      </div>
 
-        <div class="section">
-            <h2>1. SOP Penanganan Gempa Bumi</h2>
-            <p>Tujuan: Pedoman tindakan cepat dan terstruktur untuk evakuasi, penyelamatan, dan pengamanan aset saat gempa.</p>
-            <br>
-            <h4>Organisasi:</h4>
-            <ul>
-                <li>Kadiv GA: Bertanggung jawab mengkoordinasikan evakuasi.</li>
-                <li>Chief Security: Memimpin pengamanan pintu, penyisiran gedung, dan pelaporan.</li>
-                <li>Anggota Security: Evakuasi karyawan, pastikan semua ruangan terkunci, laporkan korban.</li>
-            </ul><br>
-            <h4>Tindakan Penting:</h4>
-            <ul>
-                <li>Putuskan aliran listrik (matikan saklar induk).</li>
-                <li>Evakuasi melalui tangga darurat (hindari lift).</li>
-                <li>Hubungi instansi terkait (pemadam kebakaran, ambulans).</li>
-                <li>Amankan dokumen dan aset penting.</li>
-                <li>Larang orang tidak berkepentingan masuk area bencana.</li>
-            </ul>
-        </div>
-        <br>
-        <div class="section">
-            <h2>2. SOP Ancaman Bom</h2>
-            <p>Tujuan: Pedoman penanganan ancaman bom untuk meminimalkan risiko dan kerusakan.</p><br>
-            <h4>Organisasi:</h4>
-            <ul>
-                <li>Kadiv GA: Memberikan instruksi evakuasi.</li>
-                <li>Chief Security: Memimpin pengamanan lokasi dan koordinasi dengan aparat.</li>
-            </ul><br>
-            <h4>Prosedur Utama:</h4><br>
-            <h4>Jika Menerima Telepon Ancaman:</h4>
-            <ul>
-                <li>Catat detail penelepon (jenis suara, logat, latar belakang suara).</li>
-                <li>Tanyakan lokasi bom, waktu ledak, dan deskripsi benda.</li>
-                <li>Laporkan ke Kepolisian/Gegana.</li>
-            </ul><br>
-            <h4>Jika Menemukan Benda Mencurigakan:</h4>
-            <ul>
-                <li>Jangan disentuh!</li>
-                <li>Blokade area, evakuasi orang, dan laporkan ke Polri.</li>
-            </ul><br>
-            <h4>Evakuasi:</h4>
-            <ul>
-                <li>Pastikan semua penghuni berkumpul di titik aman.</li>
-                <li>Lapor korban luka/pingsan ke petugas P3K.</li>
-            </ul>
-        </div>
-        <br>
-        <div class="section">
-            <h2>3. SOP Kebakaran</h2>
-            <h4>Tindakan:</h4>
-            <ul>
-                <li>Bunyikan alarm kebakaran.</li>
-                <li>Padamkan api dengan APAR jika masih kecil.</li>
-                <li>Putuskan listrik (matikan saklar induk).</li>
-                <li>Evakuasi via tangga darurat.</li>
-                <li>Hubungi pemadam kebakaran (nomor darurat: 113/112).</li>
-            </ul><br>
-            <h4>Pencegahan:</h4>
-            <ul>
-                <li>Seluruh anggota wajib paham penggunaan APAR.</li>
-                <li>Patroli rutin untuk deteksi dini asap/bau tidak biasa.</li>
-            </ul>
-        </div>
-        <br>
-        <div class="section">
-            <h2>4. SOP Unjuk Rasa & Kerusuhan Massa</h2>
-            <ul>
-                <li>Tutup akses masuk utama.</li>
-                <li>Perketat pemeriksaan tamu/kendaraan.</li>
-                <li>Siagakan hidran dan APAR.</li>
-                <li>Jauhkan massa dari aset vital perusahaan.</li>
-                <li>Laporkan ke Polri jika situasi memburuk.</li>
-            </ul>
-        </div>
-        <br>
-        <div class="section">
-            <h2>5. Penggunaan CCTV & Alarm</h2>
-            <h4>CCTV:</h4>
-            <ul>
-                <li>Pantau layar terus-menerus.</li>
-                <li>Laporkan aktivitas mencurigakan ke Danru.</li>
-            </ul><br>
-            <h4>Fire Alarm:</h4>
-            <ul>
-                <li>Jika alarm berbunyi, tekan tombol silence, cek lokasi via printer, dan laporkan ke petugas.</li>
-            </ul>
-        </div>
-        <br>
-        <div class="section">
-            <h2>6. Penanganan TKP (Tempat Kejadian Perkara)</h2>
-            <ul>
-                <li>Tutup akses ke TKP.</li>
-                <li>Jaga keaslian TKP (status quo).</li>
-                <li>Dokumentasikan dengan foto/sketsa.</li>
-                <li>Periksa korban (denyut nadi, pernapasan).</li>
-            </ul>
-        </div>
-        <br>
-        <div class="section">
-            <h2>7. Ketentuan Umum</h2>
-            <h4>Seragam & Perlengkapan:</h4>
-            <ul>
-                <li>Shift Pagi: PDH, sepatu hitam, tongkat, HT.</li>
-                <li>Shift Malam: PDL, senter, rompi reflektor.</li>
-            </ul><br>
-            <h4>Jam Dinas:</h4>
-            <ul>
-                <li>Shift I: 08.00–20.00 WIB</li>
-                <li>Shift II: 20.00–08.00 WIB</li>
-            </ul><br>
-        </div>
+      <div class="section">
+        <h2>1. SOP Penanganan Gempa Bumi</h2>
+        <p>
+          Tujuan: Pedoman tindakan cepat dan terstruktur untuk evakuasi,
+          penyelamatan, dan pengamanan aset saat gempa.
+        </p>
+        <br />
+        <h4>Organisasi:</h4>
+        <ul>
+          <li>Kadiv GA: Bertanggung jawab mengkoordinasikan evakuasi.</li>
+          <li>
+            Chief Security: Memimpin pengamanan pintu, penyisiran gedung, dan
+            pelaporan.
+          </li>
+          <li>
+            Anggota Security: Evakuasi karyawan, pastikan semua ruangan
+            terkunci, laporkan korban.
+          </li>
+        </ul>
+        <br />
+        <h4>Tindakan Penting:</h4>
+        <ul>
+          <li>Putuskan aliran listrik (matikan saklar induk).</li>
+          <li>Evakuasi melalui tangga darurat (hindari lift).</li>
+          <li>Hubungi instansi terkait (pemadam kebakaran, ambulans).</li>
+          <li>Amankan dokumen dan aset penting.</li>
+          <li>Larang orang tidak berkepentingan masuk area bencana.</li>
+        </ul>
+      </div>
+      <br />
+      <div class="section">
+        <h2>2. SOP Ancaman Bom</h2>
+        <p>
+          Tujuan: Pedoman penanganan ancaman bom untuk meminimalkan risiko dan
+          kerusakan.
+        </p>
+        <br />
+        <h4>Organisasi:</h4>
+        <ul>
+          <li>Kadiv GA: Memberikan instruksi evakuasi.</li>
+          <li>
+            Chief Security: Memimpin pengamanan lokasi dan koordinasi dengan
+            aparat.
+          </li>
+        </ul>
+        <br />
+        <h4>Prosedur Utama:</h4>
+        <br />
+        <h4>Jika Menerima Telepon Ancaman:</h4>
+        <ul>
+          <li>
+            Catat detail penelepon (jenis suara, logat, latar belakang suara).
+          </li>
+          <li>Tanyakan lokasi bom, waktu ledak, dan deskripsi benda.</li>
+          <li>Laporkan ke Kepolisian/Gegana.</li>
+        </ul>
+        <br />
+        <h4>Jika Menemukan Benda Mencurigakan:</h4>
+        <ul>
+          <li>Jangan disentuh!</li>
+          <li>Blokade area, evakuasi orang, dan laporkan ke Polri.</li>
+        </ul>
+        <br />
+        <h4>Evakuasi:</h4>
+        <ul>
+          <li>Pastikan semua penghuni berkumpul di titik aman.</li>
+          <li>Lapor korban luka/pingsan ke petugas P3K.</li>
+        </ul>
+      </div>
+      <br />
+      <div class="section">
+        <h2>3. SOP Kebakaran</h2>
+        <h4>Tindakan:</h4>
+        <ul>
+          <li>Bunyikan alarm kebakaran.</li>
+          <li>Padamkan api dengan APAR jika masih kecil.</li>
+          <li>Putuskan listrik (matikan saklar induk).</li>
+          <li>Evakuasi via tangga darurat.</li>
+          <li>Hubungi pemadam kebakaran (nomor darurat: 113/112).</li>
+        </ul>
+        <br />
+        <h4>Pencegahan:</h4>
+        <ul>
+          <li>Seluruh anggota wajib paham penggunaan APAR.</li>
+          <li>Patroli rutin untuk deteksi dini asap/bau tidak biasa.</li>
+        </ul>
+      </div>
+      <br />
+      <div class="section">
+        <h2>4. SOP Unjuk Rasa & Kerusuhan Massa</h2>
+        <ul>
+          <li>Tutup akses masuk utama.</li>
+          <li>Perketat pemeriksaan tamu/kendaraan.</li>
+          <li>Siagakan hidran dan APAR.</li>
+          <li>Jauhkan massa dari aset vital perusahaan.</li>
+          <li>Laporkan ke Polri jika situasi memburuk.</li>
+        </ul>
+      </div>
+      <br />
+      <div class="section">
+        <h2>5. Penggunaan CCTV & Alarm</h2>
+        <h4>CCTV:</h4>
+        <ul>
+          <li>Pantau layar terus-menerus.</li>
+          <li>Laporkan aktivitas mencurigakan ke Danru.</li>
+        </ul>
+        <br />
+        <h4>Fire Alarm:</h4>
+        <ul>
+          <li>
+            Jika alarm berbunyi, tekan tombol silence, cek lokasi via printer,
+            dan laporkan ke petugas.
+          </li>
+        </ul>
+      </div>
+      <br />
+      <div class="section">
+        <h2>6. Penanganan TKP (Tempat Kejadian Perkara)</h2>
+        <ul>
+          <li>Tutup akses ke TKP.</li>
+          <li>Jaga keaslian TKP (status quo).</li>
+          <li>Dokumentasikan dengan foto/sketsa.</li>
+          <li>Periksa korban (denyut nadi, pernapasan).</li>
+        </ul>
+      </div>
+      <br />
+      <div class="section">
+        <h2>7. Ketentuan Umum</h2>
+        <h4>Seragam & Perlengkapan:</h4>
+        <ul>
+          <li>Shift Pagi: PDH, sepatu hitam, tongkat, HT.</li>
+          <li>Shift Malam: PDL, senter, rompi reflektor.</li>
+        </ul>
+        <br />
+        <h4>Jam Dinas:</h4>
+        <ul>
+          <li>Shift I: 08.00–20.00 WIB</li>
+          <li>Shift II: 20.00–08.00 WIB</li>
+        </ul>
+        <br />
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

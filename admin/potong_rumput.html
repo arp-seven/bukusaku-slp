@@ -1,204 +1,232 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Potong Rumput</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>PEMOTONGAN RUMPUT</span>
-        <span></span> <!-- Spacer -->
+      <a href="menu_sop.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>PEMOTONGAN RUMPUT</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR POTONG RUMPUT</h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR POTONG RUMPUT</h1>
+      </div>
 
-        <div class="section">
-            <h2>Hal-hal yang Perlu Diperhatikan</h2>
-            <ul>
-                <li>Mesin Potong Rumput</li>
-                <li>Kunci Busi, Kunci Pisau (Kunci Pas)</li>
-                <li>Nilon</li>
-                <li>Sepatu Boot, Helm, Kaca Mata</li>
-                <li>Sarung Tangan</li>
-                <li>Sapu Lidi</li>
-                <li>Tempat Sampah</li>
-                <li>Oil</li>
-                <li>Bensin untuk Bahan Bakar</li>
-            </ul><br>
+      <div class="section">
+        <h2>Hal-hal yang Perlu Diperhatikan</h2>
+        <ul>
+          <li>Mesin Potong Rumput</li>
+          <li>Kunci Busi, Kunci Pisau (Kunci Pas)</li>
+          <li>Nilon</li>
+          <li>Sepatu Boot, Helm, Kaca Mata</li>
+          <li>Sarung Tangan</li>
+          <li>Sapu Lidi</li>
+          <li>Tempat Sampah</li>
+          <li>Oil</li>
+          <li>Bensin untuk Bahan Bakar</li>
+        </ul>
+        <br />
 
-            <h2>Kecepatan Kerja</h2>
-            <p>Kecepatan kerja mesin gendong: <strong>150-200 m²/jam</strong>. Hal ini bertujuan untuk merapikan rumput agar tidak terlalu panjang dan lebih enak dipandang.</p>
-            <br>
-            <h2>Langkah-langkah Pekerjaan</h2>
-            <ul>
-                <li>Bersihkan lokasi kerja dari sampah dan batu-batuan.</li>
-                <li>Siapkan semua peralatan yang dibutuhkan.</li>
-                <li>Periksa kondisi nilon.</li>
-                <li>Panaskan mesin selama 3–5 menit.</li>
-                <li>Jika mesin bauknya tidak perlu dinyalakan dahulu, gendong terlebih dahulu baru nyalakan.</li>
-                <li>Jika sebaliknya, nyalakan dahulu baru digendong.</li>
-                <li>Gunakan mesin dengan tangan kiri memegang stang pisau dan tangan kanan memegang gas.</li>
-                <li>Pemotongan rumput dilakukan sesuai kondisi area:</li>
-                <ul>
-                    <li>Jika banyak batu dan sempit, potong sedikit demi sedikit seperti menyisir hingga rata.</li>
-                    <li>Jika luas dan tidak banyak batu kecil, ayunkan tangkai pisau dengan leluasa dari kanan atau sebaliknya.</li>
-                </ul>
-                <li>Setelah selesai, kumpulkan rumput, sapu, angkat dengan dustpan, dan buang ke tempat sampah plastik.</li>
-            </ul>
-            <br>
-            <h2>Standar Pemotongan</h2>
-            <p>Rumput dipotong dengan ketinggian <strong>3-5 cm</strong> di atas permukaan tanah.</p>
-            <br>
-            <h2>Frekuensi Pemotongan</h2>
-            <ul>
-                <li>Musim kemarau: <strong>2 kali sebulan</strong></li>
-                <li>Musim hujan: <strong>3 kali sebulan</strong></li>
-            </ul>
-            <br>
-            <h2>Petunjuk Keselamatan Kerja</h2>
-            <ul>
-                <li>Gunakan mesin dengan selalu berhati-hati.</li>
-                <li>Periksa baut pengunci pisau (kendor/tidak).</li>
-                <li>Periksa saluran bensin (bocor/tidak).</li>
-                <li>Wajib menggunakan helm sebagai pelindung.</li>
-            </ul>
-            <br>
-            <h2>Perawatan Peralatan</h2>
-            <ul>
-                <li>Setelah digunakan, cek kembali kondisi mesin, terutama baut-baut yang hilang/kendor.</li>
-                <li>Jangan bersihkan dengan air terlalu banyak, cukup gunakan lap lembab, dan pastikan mesin sudah dingin sebelum dibersihkan.</li>
-                <li>Pastikan mesin bersih sebelum disimpan di tempat penyimpanan.</li>
-            </ul>
-            <br>
+        <h2>Kecepatan Kerja</h2>
+        <p>
+          Kecepatan kerja mesin gendong: <strong>150-200 m²/jam</strong>. Hal
+          ini bertujuan untuk merapikan rumput agar tidak terlalu panjang dan
+          lebih enak dipandang.
+        </p>
+        <br />
+        <h2>Langkah-langkah Pekerjaan</h2>
+        <ul>
+          <li>Bersihkan lokasi kerja dari sampah dan batu-batuan.</li>
+          <li>Siapkan semua peralatan yang dibutuhkan.</li>
+          <li>Periksa kondisi nilon.</li>
+          <li>Panaskan mesin selama 3–5 menit.</li>
+          <li>
+            Jika mesin bauknya tidak perlu dinyalakan dahulu, gendong terlebih
+            dahulu baru nyalakan.
+          </li>
+          <li>Jika sebaliknya, nyalakan dahulu baru digendong.</li>
+          <li>
+            Gunakan mesin dengan tangan kiri memegang stang pisau dan tangan
+            kanan memegang gas.
+          </li>
+          <li>Pemotongan rumput dilakukan sesuai kondisi area:</li>
+          <ul>
+            <li>
+              Jika banyak batu dan sempit, potong sedikit demi sedikit seperti
+              menyisir hingga rata.
+            </li>
+            <li>
+              Jika luas dan tidak banyak batu kecil, ayunkan tangkai pisau
+              dengan leluasa dari kanan atau sebaliknya.
+            </li>
+          </ul>
+          <li>
+            Setelah selesai, kumpulkan rumput, sapu, angkat dengan dustpan, dan
+            buang ke tempat sampah plastik.
+          </li>
+        </ul>
+        <br />
+        <h2>Standar Pemotongan</h2>
+        <p>
+          Rumput dipotong dengan ketinggian <strong>3-5 cm</strong> di atas
+          permukaan tanah.
+        </p>
+        <br />
+        <h2>Frekuensi Pemotongan</h2>
+        <ul>
+          <li>Musim kemarau: <strong>2 kali sebulan</strong></li>
+          <li>Musim hujan: <strong>3 kali sebulan</strong></li>
+        </ul>
+        <br />
+        <h2>Petunjuk Keselamatan Kerja</h2>
+        <ul>
+          <li>Gunakan mesin dengan selalu berhati-hati.</li>
+          <li>Periksa baut pengunci pisau (kendor/tidak).</li>
+          <li>Periksa saluran bensin (bocor/tidak).</li>
+          <li>Wajib menggunakan helm sebagai pelindung.</li>
+        </ul>
+        <br />
+        <h2>Perawatan Peralatan</h2>
+        <ul>
+          <li>
+            Setelah digunakan, cek kembali kondisi mesin, terutama baut-baut
+            yang hilang/kendor.
+          </li>
+          <li>
+            Jangan bersihkan dengan air terlalu banyak, cukup gunakan lap
+            lembab, dan pastikan mesin sudah dingin sebelum dibersihkan.
+          </li>
+          <li>Pastikan mesin bersih sebelum disimpan di tempat penyimpanan.</li>
+        </ul>
+        <br />
 
-            <h2>APD (Alat Pelindung Diri) Pemotongan Rumput</h2>
-            <ul>
-                <li>Topi</li>
-                <li>Sarung Tangan</li>
-                <li>Masker</li>
-                <li>Kaca Mata</li>
-                <li>Sepatu</li>
-            </ul>
-            <br>
-
-        </div>
+        <h2>APD (Alat Pelindung Diri) Pemotongan Rumput</h2>
+        <ul>
+          <li>Topi</li>
+          <li>Sarung Tangan</li>
+          <li>Masker</li>
+          <li>Kaca Mata</li>
+          <li>Sepatu</li>
+        </ul>
+        <br />
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

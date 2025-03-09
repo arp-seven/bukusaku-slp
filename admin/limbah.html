@@ -1,139 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu Limbah</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        /* Container Konten */
-        .container {
-            flex: 1;
-            padding: 20px;
-            overflow-y: auto;
-        }
+      /* Container Konten */
+      .container {
+        flex: 1;
+        padding: 20px;
+        overflow-y: auto;
+      }
 
-        /* Card */
-        .card {
-            display: flex;
-            align-items: center;
-            background: white;
-            padding: 15px;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-            margin-bottom: 15px;
-            text-align: left;
-            text-decoration: none;
-            /* Hilangkan garis bawah link */
-            color: inherit;
-            /* Warna teks tetap sama */
-        }
+      /* Card */
+      .card {
+        display: flex;
+        align-items: center;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        margin-bottom: 15px;
+        text-align: left;
+        text-decoration: none;
+        /* Hilangkan garis bawah link */
+        color: inherit;
+        /* Warna teks tetap sama */
+      }
 
-        .card img {
-            width: 50px;
-            height: 50px;
-            border-radius: 10px;
-            object-fit: cover;
-            margin-right: 15px;
-        }
+      .card img {
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        object-fit: cover;
+        margin-right: 15px;
+      }
 
-        .card h3 {
-            font-size: 18px;
-            font-weight: bold;
-            color: #222;
-            margin: 0;
-        }
+      .card h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #222;
+        margin: 0;
+      }
 
-        /* Hover effect */
-        .card:hover {
-            background-color: #f5f5f5;
-            transform: scale(1.02);
-            transition: 0.2s;
-        }
+      /* Hover effect */
+      .card:hover {
+        background-color: #f5f5f5;
+        transform: scale(1.02);
+        transition: 0.2s;
+      }
 
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 10px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>PENGELOLAAN LIMBAH</span>
-        <span></span> <!-- Spacer -->
+      <a href="menu_sop.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>PENGELOLAAN LIMBAH</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten -->
     <div class="container">
-        <a href="genset_operator.html" class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/11014/11014027.png" alt="Gambar 2">
-            <h3>Limbah Berbahaya</h3>
-        </a>
-        <a href="genset_maintenance.html" class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/12299/12299331.png" alt="Gambar 1">
-            <h3>Keselamatan Bekerja</h3>
-        </a>
-        <a href="genset_pemanasan.html" class="card">
-            <img src="https://cdn-icons-png.flaticon.com/512/13728/13728265.png" alt="Gambar 2">
-            <h3>Tanggap Darurat</h3>
-        </a>
+      <a href="genset_operator.html" class="card">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/11014/11014027.png"
+          alt="Gambar 2"
+        />
+        <h3>Limbah Berbahaya</h3>
+      </a>
+      <a href="genset_maintenance.html" class="card">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/12299/12299331.png"
+          alt="Gambar 1"
+        />
+        <h3>Keselamatan Bekerja</h3>
+      </a>
+      <a href="genset_pemanasan.html" class="card">
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/13728/13728265.png"
+          alt="Gambar 2"
+        />
+        <h3>Tanggap Darurat</h3>
+      </a>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

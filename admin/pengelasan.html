@@ -1,172 +1,207 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pengelasan</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>PENGELASAN</span>
-        <span></span> <!-- Spacer -->
+      <a href="menu_sop.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>PENGELASAN</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR PEKERJAAN PENGELASAN </h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR PEKERJAAN PENGELASAN</h1>
+      </div>
 
-        <div class="section">
-            <h2>A. Tujuan</h2>
-            <p>Untuk memastikan kegiatan operasional pekerjaan pengelasan di lingkungan SLP dilakukan dengan tepat dengan ketentuan yang berlaku.</p>
-            <br>
-            <h2>B. Ruang Lingkup</h2>
-            <p>Instruksi / SOP kerja ini menjelaskan tugas dan tanggung jawab bagian dalam operasional pekerjaan pengelasan.</p>
-            <br>
+      <div class="section">
+        <h2>A. Tujuan</h2>
+        <p>
+          Untuk memastikan kegiatan operasional pekerjaan pengelasan di
+          lingkungan SLP dilakukan dengan tepat dengan ketentuan yang berlaku.
+        </p>
+        <br />
+        <h2>B. Ruang Lingkup</h2>
+        <p>
+          Instruksi / SOP kerja ini menjelaskan tugas dan tanggung jawab bagian
+          dalam operasional pekerjaan pengelasan.
+        </p>
+        <br />
 
-            <h2>C. Peralatan Kerja Pengelasan</h2>
-            <p>Alat Pelindung Diri:</p>
-            <ul>
-                <li>Las/kap las</li>
-                <li>Apron</li>
-                <li>Masker</li>
-                <li>Sarung tangan</li>
-                <li>Google safety</li>
-                <li>Sepatu safety</li>
-            </ul>
-            <br>
+        <h2>C. Peralatan Kerja Pengelasan</h2>
+        <p>Alat Pelindung Diri:</p>
+        <ul>
+          <li>Las/kap las</li>
+          <li>Apron</li>
+          <li>Masker</li>
+          <li>Sarung tangan</li>
+          <li>Google safety</li>
+          <li>Sepatu safety</li>
+        </ul>
+        <br />
 
-            <h2>D. Cara Kerja</h2>
-            <ul>
-                <ol>
-                    <li>Pastikan operator yang akan melakukan pengelasan adalah yang sudah berpengalaman atau sudah mengikuti pelatihan (kompeten di bidangnya).</li>
-                    <li>Gunakan Alat Pelindung Diri.</li>
-                    <li>Baca dan cek kembali surat perintah kerja dari Supervisor / Manajer, guna memastikan proses pengelasan sesuai dengan yang diperintah dan persiapan kebutuhan peralatan.</li>
-                    <li>Ambil kawat las sesuai dengan kebutuhan (jenis dan jumlah).</li>
-                    <li>Siapkan trafo las listrik, periksa checklist-nya dan pastikan kondisi siap pakai.</li>
-                    <li>Pastikan area sekitar pengelasan sudah steril/bebas dari barang-barang yang mudah terbakar dan meledak (kertas, plastik, elpiji, dll).</li>
-                    <li>Setting trafo listrik untuk pengelasan.</li>
-                    <li>Bila telah selesai pekerjaan las, rapikan peralatan kerja dan posisikan trafo dalam keadaan OFF.</li>
-                    <li>Pastikan kabel power dari trafo sudah terhubung ke saklar stop kontak listrik, nyalakan trafo dengan menaikkan tuas ke atas (POSISI ON).</li>
-                    <li>Pastikan ujung kabel minus terpasang ground dan pastikan jenis kawat las sesuai.</li>
-                    <li>Putar tuas untuk mengatur ampere listrik. Putar searah jarum jam (kanan) untuk memperbesar ampere listrik yang dibutuhkan, begitu juga sebaliknya.</li>
-                </ol>
-                <br>
-            </ul>
-        </div>
+        <h2>D. Cara Kerja</h2>
+        <ul>
+          <ol>
+            <li>
+              Pastikan operator yang akan melakukan pengelasan adalah yang sudah
+              berpengalaman atau sudah mengikuti pelatihan (kompeten di
+              bidangnya).
+            </li>
+            <li>Gunakan Alat Pelindung Diri.</li>
+            <li>
+              Baca dan cek kembali surat perintah kerja dari Supervisor /
+              Manajer, guna memastikan proses pengelasan sesuai dengan yang
+              diperintah dan persiapan kebutuhan peralatan.
+            </li>
+            <li>Ambil kawat las sesuai dengan kebutuhan (jenis dan jumlah).</li>
+            <li>
+              Siapkan trafo las listrik, periksa checklist-nya dan pastikan
+              kondisi siap pakai.
+            </li>
+            <li>
+              Pastikan area sekitar pengelasan sudah steril/bebas dari
+              barang-barang yang mudah terbakar dan meledak (kertas, plastik,
+              elpiji, dll).
+            </li>
+            <li>Setting trafo listrik untuk pengelasan.</li>
+            <li>
+              Bila telah selesai pekerjaan las, rapikan peralatan kerja dan
+              posisikan trafo dalam keadaan OFF.
+            </li>
+            <li>
+              Pastikan kabel power dari trafo sudah terhubung ke saklar stop
+              kontak listrik, nyalakan trafo dengan menaikkan tuas ke atas
+              (POSISI ON).
+            </li>
+            <li>
+              Pastikan ujung kabel minus terpasang ground dan pastikan jenis
+              kawat las sesuai.
+            </li>
+            <li>
+              Putar tuas untuk mengatur ampere listrik. Putar searah jarum jam
+              (kanan) untuk memperbesar ampere listrik yang dibutuhkan, begitu
+              juga sebaliknya.
+            </li>
+          </ol>
+          <br />
+        </ul>
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

@@ -1,213 +1,236 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>House Keeping</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>HOUSE KEEPING</span>
-        <span></span> <!-- Spacer -->
+      <a href="menu_sop.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>HOUSE KEEPING</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR HOUSE KEEPING</h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR HOUSE KEEPING</h1>
+      </div>
 
-        <div class="section">
-            <h3>Pekerjaan: Stripping Sampah</h3><br>
-            <h3>A. Tujuan Stripping:</h3>
-            <p>Mengosongkan tempat sampah dan memastikan area bebas dari sampah lepas.</p>
-            <br>
-            <h3>B. Peralatan:</h3>
+      <div class="section">
+        <h3>Pekerjaan: Stripping Sampah</h3>
+        <br />
+        <h3>A. Tujuan Stripping:</h3>
+        <p>
+          Mengosongkan tempat sampah dan memastikan area bebas dari sampah
+          lepas.
+        </p>
+        <br />
+        <h3>B. Peralatan:</h3>
+        <ul>
+          <li>Polybag</li>
+          <li>Rubber Hands Glove</li>
+          <li>Masker</li>
+          <li>Garbage Trolley (jika diperlukan)</li>
+        </ul>
+        <br />
+        <h3>C. Keselamatan dan Kesehatan Kerja (K3):</h3>
+        <ul>
+          <li>
+            Gunakan masker dan sarung tangan dari awal hingga akhir proses.
+          </li>
+          <li>Pastikan polybag tidak robek atau cacat.</li>
+          <li>Setiap polybag yang digunakan harus ditutup atau diikat.</li>
+          <li>Buang sampah ke TPA segera setelah dikumpulkan.</li>
+          <li>Ganti polybag yang sudah terlalu kotor.</li>
+        </ul>
+        <br />
+        <h3>D. Tata Cara:</h3>
+        <ul>
+          <li>Siapkan peralatan.</li>
+          <li>Bawa ke area yang akan dibersihkan.</li>
+          <li>Kenakan masker dan sarung tangan.</li>
+          <li>
+            Masukkan sampah ke dalam polybag dengan urutan searah jarum jam.
+          </li>
+        </ul>
+        <br />
+        <h3>Pekerjaan: Dusting (Mengelap)</h3>
+        <br />
+        <h3>A. Tujuan Dusting:</h3>
+        <p>Membersihkan permukaan dari debu dan kotoran kecil.</p>
+        <br />
+        <h3>B. Peralatan:</h3>
+        <ul>
+          <li>
+            Cleaning Cloth (Biru: area umum, Merah: toilet, Kuning: infeksius)
+          </li>
+          <li>Bottle Sprayer</li>
+          <li>Bucket 10L</li>
+          <li>Aluminium Ladder (untuk tempat tinggi)</li>
+          <li>Warning Sign</li>
+        </ul>
+        <br />
+        <h3>C. Chemical:</h3>
+        <ul>
+          <li>Multi Purpose Cleaner (MPC)/Glass Cleaner/Neutral Cleaner</li>
+        </ul>
+        <br />
+        <h3>D. Keselamatan dan Kesehatan Kerja (K3):</h3>
+        <ul>
+          <li>
+            Gunakan sarung tangan, masker, dan kacamata saat mencampur chemical.
+          </li>
+          <li>
+            Hati-hati di area listrik seperti stop kontak dan barang elektronik.
+          </li>
+          <li>Kembalikan barang yang dipindahkan ke posisi semula.</li>
+          <li>Jika banyak dokumen di meja, minta izin sebelum membersihkan.</li>
+          <li>
+            Gunakan alat bantu seperti ladder atau scaffolding untuk area
+            tinggi.
+          </li>
+        </ul>
+        <br />
+        <h3>E. Tata Cara:</h3>
+        <ul>
+          <li>Siapkan peralatan dan chemical.</li>
+          <li>Campurkan chemical MPC dengan air (1:20).</li>
+          <li>Pasang warning sign di sekitar area kerja.</li>
+          <li>Lipat cleaning cloth seukuran telapak tangan.</li>
+          <li>Semprotkan chemical atau celupkan cleaning cloth, lalu peras.</li>
+          <li>
+            Gunakan teknik:
             <ul>
-                <li>Polybag</li>
-                <li>Rubber Hands Glove</li>
-                <li>Masker</li>
-                <li>Garbage Trolley (jika diperlukan)</li>
+              <li>Dari atas ke bawah.</li>
+              <li>Gerakan kiri ke kanan secara tumpang tindih.</li>
+              <li>Dari bagian dalam ke luar.</li>
             </ul>
-            <br>
-            <h3>C. Keselamatan dan Kesehatan Kerja (K3):</h3>
-            <ul>
-                <li>Gunakan masker dan sarung tangan dari awal hingga akhir proses.</li>
-                <li>Pastikan polybag tidak robek atau cacat.</li>
-                <li>Setiap polybag yang digunakan harus ditutup atau diikat.</li>
-                <li>Buang sampah ke TPA segera setelah dikumpulkan.</li>
-                <li>Ganti polybag yang sudah terlalu kotor.</li>
-            </ul>
-            <br>
-            <h3>D. Tata Cara:</h3>
-            <ul>
-                <li>Siapkan peralatan.</li>
-                <li>Bawa ke area yang akan dibersihkan.</li>
-                <li>Kenakan masker dan sarung tangan.</li>
-                <li>Masukkan sampah ke dalam polybag dengan urutan searah jarum jam.</li>
-            </ul>
-            <br>
-            <h3>Pekerjaan: Dusting (Mengelap)</h3><br>
-            <h3>A. Tujuan Dusting:</h3>
-            <p>Membersihkan permukaan dari debu dan kotoran kecil.</p>
-            <br>
-            <h3>B. Peralatan:</h3>
-            <ul>
-                <li>Cleaning Cloth (Biru: area umum, Merah: toilet, Kuning: infeksius)</li>
-                <li>Bottle Sprayer</li>
-                <li>Bucket 10L</li>
-                <li>Aluminium Ladder (untuk tempat tinggi)</li>
-                <li>Warning Sign</li>
-            </ul>
-            <br>
-            <h3>C. Chemical:</h3>
-            <ul>
-                <li>Multi Purpose Cleaner (MPC)/Glass Cleaner/Neutral Cleaner</li>
-            </ul>
-            <br>
-            <h3>D. Keselamatan dan Kesehatan Kerja (K3):</h3>
-            <ul>
-                <li>Gunakan sarung tangan, masker, dan kacamata saat mencampur chemical.</li>
-                <li>Hati-hati di area listrik seperti stop kontak dan barang elektronik.</li>
-                <li>Kembalikan barang yang dipindahkan ke posisi semula.</li>
-                <li>Jika banyak dokumen di meja, minta izin sebelum membersihkan.</li>
-                <li>Gunakan alat bantu seperti ladder atau scaffolding untuk area tinggi.</li>
-            </ul>
-            <br>
-            <h3>E. Tata Cara:</h3>
-            <ul>
-                <li>Siapkan peralatan dan chemical.</li>
-                <li>Campurkan chemical MPC dengan air (1:20).</li>
-                <li>Pasang warning sign di sekitar area kerja.</li>
-                <li>Lipat cleaning cloth seukuran telapak tangan.</li>
-                <li>Semprotkan chemical atau celupkan cleaning cloth, lalu peras.</li>
-                <li>Gunakan teknik:
-                    <ul>
-                        <li>Dari atas ke bawah.</li>
-                        <li>Gerakan kiri ke kanan secara tumpang tindih.</li>
-                        <li>Dari bagian dalam ke luar.</li>
-                    </ul>
-                </li>
-            </ul>
-            <br>
-            <h3>F. Perawatan Peralatan:</h3>
-            <ul>
-                <li>Cuci dan keringkan peralatan sebelum disimpan.</li>
-                <li>Kosongkan bottle sprayer dan bucket dari sisa chemical sebelum menyimpannya.</li>
-            </ul><br>
-        </div>
+          </li>
+        </ul>
+        <br />
+        <h3>F. Perawatan Peralatan:</h3>
+        <ul>
+          <li>Cuci dan keringkan peralatan sebelum disimpan.</li>
+          <li>
+            Kosongkan bottle sprayer dan bucket dari sisa chemical sebelum
+            menyimpannya.
+          </li>
+        </ul>
+        <br />
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

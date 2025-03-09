@@ -1,193 +1,216 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gardener</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="index.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>GARDENER</span>
-        <span></span> <!-- Spacer -->
+      <a href="menu_sop.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>GARDENER</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR GARDENER</h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR GARDENER</h1>
+      </div>
 
-        <div class="section">
-            <h2>1. TUJUAN</h2>
-            <p>Menjamin seluruh pekerjaan gardener dilakukan dengan memperhatikan aspek keselamatan serta menjaga kebersihan dan keindahan taman.</p>
-            <br>
-            <h2>2. RUANG LINGKUP</h2>
-            <p>Prosedur ini berlaku pada seluruh area kerja SLP.</p>
-            <br>
+      <div class="section">
+        <h2>1. TUJUAN</h2>
+        <p>
+          Menjamin seluruh pekerjaan gardener dilakukan dengan memperhatikan
+          aspek keselamatan serta menjaga kebersihan dan keindahan taman.
+        </p>
+        <br />
+        <h2>2. RUANG LINGKUP</h2>
+        <p>Prosedur ini berlaku pada seluruh area kerja SLP.</p>
+        <br />
 
-            <h2>3. REFERENSI</h2>
-            <ul>
-                <li>UUD RI No. 01/1970 tentang K3</li>
-                <li>Sistem Manajemen Kesehatan dan Keselamatan Kerja</li>
-                <li>SMK3: PP 50/2012</li>
-            </ul>
-            <br>
+        <h2>3. REFERENSI</h2>
+        <ul>
+          <li>UUD RI No. 01/1970 tentang K3</li>
+          <li>Sistem Manajemen Kesehatan dan Keselamatan Kerja</li>
+          <li>SMK3: PP 50/2012</li>
+        </ul>
+        <br />
 
-            <h2>4. SOP GARDENER</h2>
-            <ul>
-                <li>
-                    <h4>Pemeliharaan Tanaman</h4>
-                    <p>Merawat taman dengan menanam, menyiram, dan mengatasi hama atau penyakit pada tanaman.</p>
-                <li>
+        <h2>4. SOP GARDENER</h2>
+        <ul>
+          <li>
+            <h4>Pemeliharaan Tanaman</h4>
+            <p>
+              Merawat taman dengan menanam, menyiram, dan mengatasi hama atau
+              penyakit pada tanaman.
+            </p>
+          </li>
 
-                    <h4>Perancangan Lanskap</h4>
-                    <p>Menata lanskap agar lingkungan tetap indah dan fungsional.</p>
-                <li>
-                    <h4>Kebersihan dan Estetika</h4>
-                    <p>Menjaga kebersihan dan estetika taman.</p>
-                <li>
-                    <h4>Perawatan Irigasi</h4>
-                    <p>Memastikan sistem irigasi berfungsi baik.</p>
-                <li>
-                    <h4>Perawatan Peralatan Gardening</h4>
-                    <p>Merawat alat seperti gunting, gergaji, dan cangkul.</p>
-                <li>
-                    <h4>Pengelolaan Ruang Terbuka</h4>
-                    <p>Melakukan pemotongan rumput dan penataan taman.</p>
-                <li>
-                    <h4>Identifikasi dan Pengendalian Hama</h4>
-                    <p>Mengenali tanda serangan hama dan melakukan pengendalian.</p>
-                <li>
-                    <h4>Perancangan dan Pemeliharaan Hardscape</h4>
-                    <p>Merawat elemen keras seperti batu dan jalan setapak.</p>
-                <li>
-                    <h4>Kolaborasi dengan Pihak Terkait</h4>
-                    <p>Bekerja sama dengan pihak terkait dalam pengelolaan taman.</p>
-            </ul>
-            <br>
+          <li>
+            <h4>Perancangan Lanskap</h4>
+            <p>Menata lanskap agar lingkungan tetap indah dan fungsional.</p>
+          </li>
 
-            <h2>5. PERALATAN WAJIB GARDENER</h2>
-            <ul>
-                <li>Alat Pemangkas (gunting, pisau, gergaji)</li>
-                <li>Alat Penyiram (selang air, sprayer)</li>
-                <li>Pupuk</li>
-                <li>Alat Perawatan Tanah (cangkul, sekop)</li>
-                <li>APD (Sarung tangan, masker, kaca mata, sepatu)</li>
-                <br>
-            </ul>
-        </div>
+          <li>
+            <h4>Kebersihan dan Estetika</h4>
+            <p>Menjaga kebersihan dan estetika taman.</p>
+          </li>
+
+          <li>
+            <h4>Perawatan Irigasi</h4>
+            <p>Memastikan sistem irigasi berfungsi baik.</p>
+          </li>
+
+          <li>
+            <h4>Perawatan Peralatan Gardening</h4>
+            <p>Merawat alat seperti gunting, gergaji, dan cangkul.</p>
+          </li>
+
+          <li>
+            <h4>Pengelolaan Ruang Terbuka</h4>
+            <p>Melakukan pemotongan rumput dan penataan taman.</p>
+          </li>
+
+          <li>
+            <h4>Identifikasi dan Pengendalian Hama</h4>
+            <p>Mengenali tanda serangan hama dan melakukan pengendalian.</p>
+          </li>
+
+          <li>
+            <h4>Perancangan dan Pemeliharaan Hardscape</h4>
+            <p>Merawat elemen keras seperti batu dan jalan setapak.</p>
+          </li>
+
+          <li>
+            <h4>Kolaborasi dengan Pihak Terkait</h4>
+            <p>Bekerja sama dengan pihak terkait dalam pengelolaan taman.</p>
+          </li>
+        </ul>
+
+        <br />
+
+        <h2>5. PERALATAN WAJIB GARDENER</h2>
+        <ul>
+          <li>Alat Pemangkas (gunting, pisau, gergaji)</li>
+          <li>Alat Penyiram (selang air, sprayer)</li>
+          <li>Pupuk</li>
+          <li>Alat Perawatan Tanah (cangkul, sekop)</li>
+          <li>APD (Sarung tangan, masker, kaca mata, sepatu)</li>
+          <br />
+        </ul>
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>

@@ -1,229 +1,280 @@
 <!DOCTYPE html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Operator Genset</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            background-color: #f5f5f5;
-            background-image: url('https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg')
-        }
+      body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color: #f5f5f5;
+        background-image: url("https://bukusaku.pt-slp.co.id/images/lobby-SLP.jpg");
+      }
 
-        /* Navigasi Atas */
-        .top-nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            background: #f39c12;
-            color: white;
-            padding: 15px;
-            font-size: 18px;
-            font-weight: bold;
-            z-index: 1000;
-            /* Agar tetap di atas elemen lain */
-        }
+      /* Navigasi Atas */
+      .top-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #f39c12;
+        color: white;
+        padding: 15px;
+        font-size: 18px;
+        font-weight: bold;
+        z-index: 1000;
+        /* Agar tetap di atas elemen lain */
+      }
 
+      .top-nav .back-btn {
+        font-size: 24px;
+        color: white;
+        text-decoration: none;
+      }
 
-        .top-nav .back-btn {
-            font-size: 24px;
-            color: white;
-            text-decoration: none;
-        }
+      /* Konten Utama */
+      .content {
+        flex: 1;
+        padding: 20px;
+      }
 
+      .header h1 {
+        font-size: 26px;
+        color: #333;
+        margin-top: 70px;
+        margin-bottom: 20px;
+      }
 
-        /* Konten Utama */
-        .content {
-            flex: 1;
-            padding: 20px;
-        }
+      .section {
+        margin-bottom: 25px;
+      }
 
-        .header h1 {
-            font-size: 26px;
-            color: #333;
-            margin-top: 70px;
-            margin-bottom: 20px;
-        }
+      .section h2 {
+        font-size: 22px;
+        color: #222;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+      }
 
-        .section {
-            margin-bottom: 25px;
-        }
+      .section p,
+      .section ul {
+        font-size: 18px;
+        color: black;
+        line-height: 1.6;
+        margin-left: 15px;
+      }
 
-        .section h2 {
-            font-size: 22px;
-            color: #222;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 5px;
-        }
+      .section ul {
+        padding-left: 25px;
+      }
 
-        .section p,
-        .section ul {
-            font-size: 18px;
-            color: black;
-            line-height: 1.6;
-            margin-left: 15px;
-        }
+      /* Navigasi Bawah */
+      .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background: #333;
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
 
-        .section ul {
-            padding-left: 25px;
-        }
-
-        /* Navigasi Bawah */
-        .navbar {
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            background: #333;
-            padding: 12px 0;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            font-size: 18px;
-            text-align: center;
-            font-weight: bold;
-        }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!-- Navigasi Atas -->
     <div class="top-nav">
-        <a href="genset.html" class="back-btn"><i class="fa fa-arrow-left"></i></a>
-        <span>OPERATOR GENSET</span>
-        <span></span> <!-- Spacer -->
+      <a href="genset.html" class="back-btn"
+        ><i class="fa fa-arrow-left"></i
+      ></a>
+      <span>OPERATOR GENSET</span>
+      <span></span>
+      <!-- Spacer -->
     </div>
 
     <!-- Konten Utama -->
     <div class="content">
-        <div class="header">
-            <h1>PROSEDUR OPERATOR GENSET</h1>
-        </div>
+      <div class="header">
+        <h1>PROSEDUR OPERATOR GENSET</h1>
+      </div>
 
-        <div class="section">
-            <h3>1. Pengenalan</h3><br>
-            <p>Sebelum menggunakan atau mengoperasikan peralatan atau instrument, baca petunjuk dengan seksama dan pelajari setiap fungsinya, hubungan dan istilah – istilah serta symbol – symbol.</p>
-        </div>
+      <div class="section">
+        <h3>1. Pengenalan</h3>
+        <br />
+        <p>
+          Sebelum menggunakan atau mengoperasikan peralatan atau instrument,
+          baca petunjuk dengan seksama dan pelajari setiap fungsinya, hubungan
+          dan istilah – istilah serta symbol – symbol.
+        </p>
+      </div>
 
-        <div class="section">
-            <h3>2. Panel Genset</h3><br>
+      <div class="section">
+        <h3>2. Panel Genset</h3>
+        <br />
+        <ul>
+          <li>
+            Panel Genset terdiri dari 3 cubicle ( A, B, C ) <br />
+            A. No. 3 genset panel <br />
+            B. No. 4 genset panel <br />
+            C. Panel utama dan panel keluaran <br />
+            ( Panel No.3 serupa dengan panel No.4 ) <br />
+          </li>
+          <br />
+          <li>
+            Panel Genset No. 3 dan No. 4 <br />Baris pertama dari atas –
+            Instrument untuk genset Out put <br />A = Ampere meter <br />V =
+            Volt meter <br />PF = Power Factor Meter <br />Hhz = Frequency Meter
+            <br />W = Watt meter <br />Baris kedua dari atas synchronizing
+            instrument (Untuk penyelarasan secara manual ) <br />V = Volt meter
+            from other generator <br />Hhz = Frequency meter <br />Baris ketiga
+            dari atas : <br />AS = Ampere meter selector switch ( Meter at first
+            row ) <br />VS = Volt meter selector switch ( Meter at first row )
+            <br />30 = Alarm announcer mesin dan generator <br />A = DC ampere
+            meter dari battery charging dan discharging <br />V = DC volt meter
+            battery voltage ( DC supply, power untuk control ) <br />Baris
+            keempat dari atas : <br />P3 = Emergency Stop <br />OS = Jenis
+            pengoperasian – OFF, MANUAL, AUTO <br />VR =Voltage rheostat, untuk
+            mensetting voltase yang dikeluarkan oleh GEN <br />CBS = Circuit
+            breaker switch, untuk switching manual <br />P1 = Engine start push
+            button, untuk menghidupkan mesin secara manual <br />
+            ( Dalam module genset ) <br />P2 = Engine stop push button, untuk
+            memberhentikan mesin secara manual <br />( dalam module genset )
+          </li>
+          <br />
+          <li>
+            Panel keluaran dan Panel Utama <br />A = Ampere meter untuk 3 phase
+            ( Total current / AM per supply dari generator ) <br />SIG = Ground
+            Fault Relay <br />OS = Jenis pengoperasian, Manual atau Auto
+            <br />LS = Lead selector, untuk memilih generator mana yang akan
+            menyala terlebih dahulu dan akan menetap pada beban yang min (Master
+            Running )
+          </li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>3. Jenis atau Type Pengoperasian</h3>
+        <br />
+        <ul>
+          <li>
+            OS ( Operation Mode Switch ) digunakan untuk memilih pengoperasian
+            genset secara MANUAL atau OTOMATIS. Saat posisi switch “ AUTOMATIC
+            ‘, Saat posisi switch automatic load monitor system energize dan AMF
+            ( Automatic Main Failure ) <br />Status stand by
             <ul>
-                <li>Panel Genset terdiri dari 3 cubicle ( A, B, C ) <br>
-                    A. No. 3 genset panel <br>
-                    B. No. 4 genset panel <br>
-                    C. Panel utama dan panel keluaran <br>
-                    ( Panel No.3 serupa dengan panel No.4 ) <br>
-                </li> <br>
-                <li>Panel Genset No. 3 dan No. 4
-                    <br>Baris pertama dari atas – Instrument untuk genset Out put
-                    <br>A = Ampere meter
-                    <br>V = Volt meter
-                    <br>PF = Power Factor Meter
-                    <br>Hhz = Frequency Meter
-                    <br>W = Watt meter
-                    <br>Baris kedua dari atas synchronizing instrument (Untuk penyelarasan secara manual )
-                    <br>V = Volt meter from other generator
-                    <br>Hhz = Frequency meter
-                    <br>Baris ketiga dari atas :
-                    <br>AS = Ampere meter selector switch ( Meter at first row )
-                    <br>VS = Volt meter selector switch ( Meter at first row )
-                    <br>30 = Alarm announcer mesin dan generator
-                    <br>A = DC ampere meter dari battery charging dan discharging
-                    <br>V = DC volt meter battery voltage ( DC supply, power untuk control )
-                    <br>Baris keempat dari atas :
-                    <br>P3 = Emergency Stop
-                    <br>OS = Jenis pengoperasian – OFF, MANUAL, AUTO
-                    <br>VR =Voltage rheostat, untuk mensetting voltase yang dikeluarkan oleh GEN
-                    <br>CBS = Circuit breaker switch, untuk switching manual
-                    <br>P1 = Engine start push button, untuk menghidupkan mesin secara manual
-                    <br> ( Dalam module genset )
-                    <br>P2 = Engine stop push button, untuk memberhentikan mesin secara manual
-                    <br>( dalam module genset )
-                </li><br>
-                <li>Panel keluaran dan Panel Utama
-                    <br>A = Ampere meter untuk 3 phase ( Total current / AM per supply dari generator )
-                    <br>SIG = Ground Fault Relay
-                    <br>OS = Jenis pengoperasian, Manual atau Auto
-                    <br>LS = Lead selector, untuk memilih generator mana yang akan menyala terlebih dahulu dan akan menetap pada beban yang min (Master Running )
-                </li>
-
+              <li>
+                OS1 ( Operation Mode Switch Genset No. 3 ). Pada Auto Mode
+                genset no. 3 akan beroperasi atau berjalan secara otomatis dan
+                pada “ Manual Mode “ genset no. 3 harus dioperasikan secara
+                manual
+              </li>
+              <li>
+                OS2 ( Operation Mode Switch Genset No. 4). Pada Auto Mode No.4
+                akan beroperasi secara Automatic dan pada “ Manual Mode “ maka
+                Genset No. 4 harus dioperasikan secara manual
+              </li>
+              <li>
+                LS ( Lead Selector Switch ) digunakan untuk memilih generator
+                ACB ( Air Circuit Breaker ) mana yang akan ditutup terlebih
+                dahulu dan tetap menutup pada saat beban minimum
+              </li>
             </ul>
-        </div>
+          </li>
+        </ul>
+      </div>
 
-        <div class="section">
-            <h3>3. Jenis atau Type Pengoperasian</h3><br>
+      <div class="section">
+        <h3>4. Pengoperasian Genset Secara Manual</h3>
+        <br />
+        <ul>
+          <li>
+            Operation Genset Secara Manual <br />Putar semua OS ( Operation Mode
+            Switch ) pada posisi manual ; perhatikan bahan bakar, air pendingin,
+            minyak pelumas, battery. Jika semuanya baik, nyalakan kipas
+            Ventilation
+          </li>
+          <br />
+          <li>
+            *Tekan Tombol “ Start “ pada generator yang akan dinyalakan
+            <br />Setelah generator mencapai kecepatan yang konstan ( Kecepatan
+            Operation ), perhatikan ketinggian minyak pada sisi generator.
+            Periksa voltase, Hz. Jika semua benar, generator siap untuk
+            dibebankan
             <ul>
-                <li>OS ( Operation Mode Switch ) digunakan untuk memilih pengoperasian genset secara MANUAL atau OTOMATIS. Saat posisi switch “ AUTOMATIC ‘, Saat posisi switch automatic load monitor system energize dan AMF ( Automatic Main Failure )
-                    <br>Status stand by
-                    <ul>
-                        <li>OS1 ( Operation Mode Switch Genset No. 3 ). Pada Auto Mode genset no. 3 akan beroperasi atau berjalan secara otomatis dan pada “ Manual Mode “ genset no. 3 harus dioperasikan secara manual</li>
-                        <li>OS2 ( Operation Mode Switch Genset No. 4). Pada Auto Mode No.4 akan beroperasi secara Automatic dan pada “ Manual Mode “ maka Genset No. 4 harus dioperasikan secara manual</li>
-                        <li>LS ( Lead Selector Switch ) digunakan untuk memilih generator ACB ( Air Circuit Breaker ) mana yang akan ditutup terlebih dahulu dan tetap menutup pada saat beban minimum</li>
-                    </ul>
-                </li>
+              <li>
+                Control Waktu Pemberhentian ( STOP ) <br />Gunakan procedure
+                yang sama dengan point ( * ) untuk generator yang lain
+              </li>
+              <li>
+                Penyesuaian Generator <br />Pada tahap ini diperlukan perhatian
+                penuh
+                <ul>
+                  - Pertama check dan periksa synchronizer instrument atau
+                  meter, voltage, frequency pada generator harus sama.
+                  <br />- Teruskan ke panel yang lain dan periksa system
+                  penyesuaian ( syncron ) dari lag ke lead. Usahakan membuat
+                  pointer tetap ditengah dengan merubah penyesuai frequency naik
+                  atau turun, dan pertahankan tetap ditengah kemudian matikan
+                  generator CBS ( Circuit Breaker Switch ). Sekarang ke dua
+                  generator beroperasi secara parallel, siap untuk dibebankan (
+                  Siap dimasukkan pada panel emergency ) Operator harus mengisi
+                  dan mencatat kondisi dari genset tersebut.
+                </ul>
+              </li>
             </ul>
-        </div>
+          </li>
+        </ul>
+      </div>
 
-        <div class="section">
-            <h3>4. Pengoperasian Genset Secara Manual </h3><br>
-            <ul>
-                <li>Operation Genset Secara Manual
-                    <br>Putar semua OS ( Operation Mode Switch ) pada posisi manual ; perhatikan bahan bakar, air pendingin, minyak pelumas, battery. Jika semuanya baik, nyalakan kipas Ventilation
-                </li><br>
-                <li>*Tekan Tombol “ Start “ pada generator yang akan dinyalakan
-                    <br>Setelah generator mencapai kecepatan yang konstan ( Kecepatan Operation ), perhatikan ketinggian minyak pada sisi generator. Periksa voltase, Hz. Jika semua benar, generator siap untuk dibebankan
-                    <ul>
-                        <li>Control Waktu Pemberhentian ( STOP )
-                            <br>Gunakan procedure yang sama dengan point ( * ) untuk generator yang lain
-                        </li>
-                        <li>Penyesuaian Generator
-                            <br>Pada tahap ini diperlukan perhatian penuh
-                            <ul> - Pertama check dan periksa synchronizer instrument atau meter, voltage, frequency pada generator harus sama.
-                                <br>- Teruskan ke panel yang lain dan periksa system penyesuaian ( syncron ) dari lag ke lead. Usahakan membuat pointer tetap ditengah dengan merubah penyesuai frequency naik atau turun, dan pertahankan tetap ditengah kemudian matikan generator CBS ( Circuit Breaker Switch ). Sekarang ke dua generator beroperasi secara parallel, siap untuk dibebankan ( Siap dimasukkan pada panel emergency ) Operator harus mengisi dan mencatat kondisi dari genset tersebut.
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-
-        <div class="section">
-            <h3>5. Pemberhentian Genset Secara Manual ( OFF )</h3><br>
-            <ul>
-                <li>Pindahkan bebab dari genset ( Emergency ) ke PLN pada setiap gedung ( secara manual ) atau beban akan dipindahkan secara otomatis menggunakan </li>
-                <li>System ATS. Setelah generator dalam keadaan mati, matikan CBS kemudian tekan tombol stop. Generator akan berhenti setelah 3 menit ( waktu pendinginan ). Generator siap untuk difungsikan. ( Jika Synchrony manual )</li>
-            </ul>
-            <br>
-        </div>
+      <div class="section">
+        <h3>5. Pemberhentian Genset Secara Manual ( OFF )</h3>
+        <br />
+        <ul>
+          <li>
+            Pindahkan bebab dari genset ( Emergency ) ke PLN pada setiap gedung
+            ( secara manual ) atau beban akan dipindahkan secara otomatis
+            menggunakan
+          </li>
+          <li>
+            System ATS. Setelah generator dalam keadaan mati, matikan CBS
+            kemudian tekan tombol stop. Generator akan berhenti setelah 3 menit
+            ( waktu pendinginan ). Generator siap untuk difungsikan. ( Jika
+            Synchrony manual )
+          </li>
+        </ul>
+        <br />
+      </div>
     </div>
 
     <!-- Navigasi Bawah -->
     <div class="navbar">
-        <a href="index.html"><i class="fa fa-home"></i></a>
-<!--         <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
+      <a href="index.html"><i class="fa fa-home"></i></a>
+      <!-- <a href="/slp/index.html"><i class="fa fa-sign-out-alt"></i></a> -->
     </div>
-
-</body>
-
+  </body>
 </html>
