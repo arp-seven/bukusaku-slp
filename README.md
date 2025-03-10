@@ -1,2 +1,2 @@
 # bukusaku-slp
-Projek WEBAPP Buku Saku Informasi untuk SLP
+Projek WEBAPP Android View Buku Saku Informasi
